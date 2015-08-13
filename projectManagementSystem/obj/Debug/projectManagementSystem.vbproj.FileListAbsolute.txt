@@ -1,0 +1,73 @@
+F:\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
+F:\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe
+F:\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.pdb
+F:\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.xml
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Project.resources
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.MainForm.resources
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Resources.resources
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
+F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.xml
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddDialog.resources
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.detailsDialog.resources
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.ProjectView.resources
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.MainForm.resources
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Resources.resources
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserView.resources
+C:\Users\Jeru\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.pdb
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.xml
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddDialog.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.detailsDialog.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.ProjectView.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.MainForm.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Resources.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserView.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.xml
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddDialog.resources
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.detailsDialog.resources
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.ProjectView.resources
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.MainForm.resources
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Resources.resources
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserView.resources
+C:\Users\Jeru\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.pdb
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.xml
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddDialog.resources
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.detailsDialog.resources
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.ProjectView.resources
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.MainForm.resources
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Resources.resources
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserView.resources
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
+C:\Users\Aldrin\Desktop\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.editDialog.resources
+C:\Users\Aldrin\Documents\Visual Studio 2013\Projects\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.editDialog.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
