@@ -17,7 +17,7 @@
         'Me.height = height
     End Sub
 
-    Public Sub createThumbnail(ByVal widthParams As Integer, ByVal heightParams As Integer, ByVal userparams As String, ByVal userdescParams As String, ByVal usernameParams As String)
+    Public Sub createThumbnail(ByVal widthParams As Integer, ByVal heightParams As Integer, ByVal userparams As String, ByVal userdescParams As String, ByVal usernameParams As String, ByVal imgpath As String)
         Dim userName, userDesc, userid As New Label
         Dim box As New Panel
         Dim picBox As New PictureBox
@@ -64,6 +64,9 @@
         picBox.Size = New Point(100, 100)
         picBox.Location = New Point(41, 12)
         picBox.Cursor = Cursors.Hand
+        picBox.SizeMode = PictureBoxSizeMode.Zoom
+        picBox.ImageLocation = "http://localhost/pms_images/" & imgpath
+        picBox.BackColor = Color.Transparent
 
 
         'members.Location = New Point(5, 118)
@@ -75,7 +78,6 @@
         Else
             'MessageBox.Show("HINDE")
             userDesc.Text = "No Position"
-
         End If
         'If Convert.IsDBNull(userdescParams) Then
         '    userDesc.Text = "No Nothing"
@@ -133,7 +135,7 @@
 
                 'MessageBox.Show(datatable.Rows(i).Item(3))
                 'createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0), datatable.Rows(i).Item(1), datatable.Rows(i).Item(2), datatable.Rows(i).Item(3).ToString, datatable.Rows(i).Item(4))
-                createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0), datatable.Rows(i).Item(2).ToString, datatable.Rows(i).Item(1))
+                createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0), datatable.Rows(i).Item(2).ToString, datatable.Rows(i).Item(1), datatable.Rows(i).Item(3))
 
             Next
 

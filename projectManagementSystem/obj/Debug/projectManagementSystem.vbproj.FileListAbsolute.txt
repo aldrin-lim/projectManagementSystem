@@ -83,3 +83,4 @@ C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectMa
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserView.resources
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.EditDurationDate.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserDetail.resources

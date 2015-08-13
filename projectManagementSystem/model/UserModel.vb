@@ -34,7 +34,28 @@ Public Class UserModel
         Dim dataTable As New DataTable
         Try
             Dim dataset As New DataSet
-            Dim sql = "SELECT user_id, CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) )'User Name', user_description FROM users"
+            Dim sql = "SELECT user_id, CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) )'User Name', user_description,user_image FROM users"
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "users")
+            dataTable = dataset.Tables("users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
+    Public Function getUserByID(ByVal id) As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT user_id, CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) )'User Name', user_description,user_image FROM users WHERE user_id = " & id
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
             sqlCmd = New MySqlCommand(sql, mysqlcon)
