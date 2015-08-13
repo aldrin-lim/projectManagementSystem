@@ -13,10 +13,15 @@
         box.createList(uModel.getUserByProjectID(ProjectId))
         txtProjectTitle.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(1).ToString
         txtEditTitle.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(1)
-        txtProjectDesc.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(2)
+        If String.IsNullOrEmpty(pModel.getProjectByID(ProjectId).Rows(0).Item(2).ToString) Then
+            txtProjectDesc.Text = " (No Description Available) "
+        Else
+            txtProjectDesc.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(2).ToString
+        End If
+        '
 
         txtEditTitle.Visible = False
-        
+
     End Sub
     
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
