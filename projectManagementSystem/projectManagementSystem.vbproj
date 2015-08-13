@@ -88,6 +88,7 @@
   <ItemGroup>
     <Compile Include="Controller\sqlCon.vb" />
     <Compile Include="Controller\TaskBox.vb" />
+    <Compile Include="Controller\UserBox.vb" />
     <Compile Include="Model\ProjectModel.vb" />
     <Compile Include="Model\UserModel.vb" />
     <Compile Include="View\Admin\ProjectModule\AddDialog.Designer.vb">
@@ -268,6 +269,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconmonstr-edit-7-icon-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-user-11-icon-128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
