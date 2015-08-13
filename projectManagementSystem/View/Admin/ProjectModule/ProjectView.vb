@@ -1,7 +1,8 @@
 ﻿
 Imports MySql.Data.MySqlClient
 Public Class ProjectView
-
+    Private selectedProjectID
+    Private selectedProjectDate
     '--------------VARIABLES & INITIALIZATION-----------------
     Public selectedID
     Private createProjectThumbnailCount = 0
@@ -14,10 +15,31 @@ Public Class ProjectView
         init()
     End Sub
 
-    Private Sub viewProjectDetails(ByVal idx As String)
-        selectedID = idx
+    Private Sub viewProjectDetails(ByVal idx As String, ByVal dtx As String)
+        setSelectedProjectDate(dtx)
+        setSelectedProjectID(idx)
         detailsDialog.ShowDialog()
     End Sub
+
+
+    Public Sub setSelectedProjectID(ByVal id)
+        selectedProjectID = id
+    End Sub
+
+    Public Sub setSelectedProjectDate(ByVal dtx)
+        selectedProjectDate = dtx
+    End Sub
+
+
+    Public Function getSelectedProjectID() As String
+        Return selectedProjectID
+    End Function
+    Public Function getSelectedProjectDate() As String
+        Return selectedProjectDate.ToString.Replace("Duration date:  " & vbCrLf, "")
+    End Function
+
+
+    
 
     '--------------FUNCTIONS-----------------
 
@@ -45,14 +67,18 @@ Public Class ProjectView
         For Each ctrl In panelBox.Controls
             If TypeOf ctrl Is System.Windows.Forms.Panel Then
                 Dim projectId = Nothing
+                Dim projectDt = Nothing
                 For Each pnlctrl As Label In ctrl.Controls
                     If pnlctrl.Tag = "id" Then
                         projectId = pnlctrl.Text
                     End If
+                    If pnlctrl.Tag = "date" Then
+                        projectDt = pnlctrl.Text
+                    End If
                 Next
                 For Each panelctrl As Label In ctrl.Controls
                     If panelctrl.Text = "View Details" Then
-                        AddHandler panelctrl.Click, Sub(sender, e) viewProjectDetails(projectId)
+                        AddHandler panelctrl.Click, Sub(sender, e) viewProjectDetails(projectId, projectDt)
                     End If
 
                 Next

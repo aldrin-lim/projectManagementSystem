@@ -108,6 +108,12 @@
     <Compile Include="View\Admin\ProjectModule\EditDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="View\Admin\ProjectModule\EditDurationDate.Designer.vb">
+      <DependentUpon>EditDurationDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\ProjectModule\EditDurationDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\Admin\ProjectModule\ProjectView.Designer.vb">
       <DependentUpon>ProjectView.vb</DependentUpon>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\ProjectModule\editDialog.resx">
       <DependentUpon>EditDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\ProjectModule\EditDurationDate.resx">
+      <DependentUpon>EditDurationDate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\ProjectModule\ProjectView.resx">
       <DependentUpon>ProjectView.vb</DependentUpon>
@@ -212,7 +221,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-edit-7-icon-24.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\team_module_icon.png" />
   </ItemGroup>
@@ -254,6 +265,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\title1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-edit-7-icon-24 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

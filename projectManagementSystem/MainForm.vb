@@ -36,6 +36,7 @@
         ProjectView.Show()
         ProjectView.Location = New Point(229, 0)
         UserView.Hide()
+
     End Sub
 
     '-------Team Module-------
@@ -143,4 +144,7 @@
     Private Sub btnProfileIcon_MouseLeave(sender As Object, e As EventArgs) Handles btnProfileIcon.MouseLeave, iconProfile.MouseLeave, txtProfileIcon.MouseLeave
         btnProfileIcon.BackColor = Color.FromArgb(30, 30, 30)
     End Sub
+
+    
+   
 End Class

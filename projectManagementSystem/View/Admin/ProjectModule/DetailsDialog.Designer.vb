@@ -24,49 +24,40 @@ Partial Class detailsDialog
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.txtProjectTitle = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Label()
         Me.txtProjectDesc = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtDurationDate = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtEditTitle = New System.Windows.Forms.RichTextBox()
-        Me.btnEditDesc = New System.Windows.Forms.PictureBox()
-        Me.btnEditTitle = New System.Windows.Forms.PictureBox()
         Me.toolTipEdit = New System.Windows.Forms.ToolTip(Me.components)
+        Me.btnEditDuration = New System.Windows.Forms.PictureBox()
+        Me.btnEditTitle = New System.Windows.Forms.PictureBox()
+        Me.btnEditDesc = New System.Windows.Forms.PictureBox()
         Me.txtEditDesc = New System.Windows.Forms.RichTextBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.btnEditDesc, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.btnEditDuration, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEditTitle, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnEditDesc, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtProjectTitle
         '
         Me.txtProjectTitle.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProjectTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.txtProjectTitle.Location = New System.Drawing.Point(20, 9)
+        Me.txtProjectTitle.Location = New System.Drawing.Point(26, 8)
         Me.txtProjectTitle.Name = "txtProjectTitle"
         Me.txtProjectTitle.Size = New System.Drawing.Size(676, 75)
         Me.txtProjectTitle.TabIndex = 1
         Me.txtProjectTitle.Text = "Empolyee Information and Management System"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 159)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(819, 1)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
         '
         'Label2
         '
@@ -97,7 +88,7 @@ Partial Class detailsDialog
         Me.txtProjectDesc.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.txtProjectDesc.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProjectDesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.txtProjectDesc.Location = New System.Drawing.Point(27, 87)
+        Me.txtProjectDesc.Location = New System.Drawing.Point(33, 86)
         Me.txtProjectDesc.Name = "txtProjectDesc"
         Me.txtProjectDesc.Size = New System.Drawing.Size(779, 42)
         Me.txtProjectDesc.TabIndex = 5
@@ -124,15 +115,6 @@ Partial Class detailsDialog
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "All Tasks: "
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.PictureBox2.Location = New System.Drawing.Point(19, 132)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(819, 1)
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
         '
         'Label6
         '
@@ -173,18 +155,18 @@ Partial Class detailsDialog
         Me.Label8.Text = "Members:"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'txtDurationDate
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Gray
-        Me.Label1.Location = New System.Drawing.Point(397, 139)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 16)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Aug 3,2015 - Aug 9,2015"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtDurationDate.AutoSize = True
+        Me.txtDurationDate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.txtDurationDate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDurationDate.ForeColor = System.Drawing.Color.Gray
+        Me.txtDurationDate.Location = New System.Drawing.Point(397, 139)
+        Me.txtDurationDate.Name = "txtDurationDate"
+        Me.txtDurationDate.Size = New System.Drawing.Size(151, 16)
+        Me.txtDurationDate.TabIndex = 13
+        Me.txtDurationDate.Text = "Aug 3,2015 - Aug 9,2015"
+        Me.txtDurationDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
@@ -205,36 +187,12 @@ Partial Class detailsDialog
         Me.txtEditTitle.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEditTitle.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold)
         Me.txtEditTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.txtEditTitle.Location = New System.Drawing.Point(25, 9)
+        Me.txtEditTitle.Location = New System.Drawing.Point(31, 8)
         Me.txtEditTitle.Name = "txtEditTitle"
-        Me.txtEditTitle.Size = New System.Drawing.Size(669, 75)
+        Me.txtEditTitle.Size = New System.Drawing.Size(606, 75)
         Me.txtEditTitle.TabIndex = 15
         Me.txtEditTitle.Text = ""
         Me.txtEditTitle.Visible = False
-        '
-        'btnEditDesc
-        '
-        Me.btnEditDesc.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEditDesc.Image = Global.projectManagementSystem.My.Resources.Resources.add_project
-        Me.btnEditDesc.Location = New System.Drawing.Point(3, 88)
-        Me.btnEditDesc.Name = "btnEditDesc"
-        Me.btnEditDesc.Size = New System.Drawing.Size(15, 14)
-        Me.btnEditDesc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnEditDesc.TabIndex = 17
-        Me.btnEditDesc.TabStop = False
-        Me.toolTipEdit.SetToolTip(Me.btnEditDesc, "Edit Description of this Project")
-        '
-        'btnEditTitle
-        '
-        Me.btnEditTitle.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEditTitle.Image = Global.projectManagementSystem.My.Resources.Resources.add_project
-        Me.btnEditTitle.Location = New System.Drawing.Point(3, 16)
-        Me.btnEditTitle.Name = "btnEditTitle"
-        Me.btnEditTitle.Size = New System.Drawing.Size(15, 14)
-        Me.btnEditTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnEditTitle.TabIndex = 18
-        Me.btnEditTitle.TabStop = False
-        Me.toolTipEdit.SetToolTip(Me.btnEditTitle, "Edit Title of this Project")
         '
         'toolTipEdit
         '
@@ -243,30 +201,72 @@ Partial Class detailsDialog
         Me.toolTipEdit.InitialDelay = 1
         Me.toolTipEdit.ReshowDelay = 0
         '
+        'btnEditDuration
+        '
+        Me.btnEditDuration.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEditDuration.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24
+        Me.btnEditDuration.Location = New System.Drawing.Point(567, 136)
+        Me.btnEditDuration.Name = "btnEditDuration"
+        Me.btnEditDuration.Size = New System.Drawing.Size(18, 18)
+        Me.btnEditDuration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnEditDuration.TabIndex = 20
+        Me.btnEditDuration.TabStop = False
+        Me.toolTipEdit.SetToolTip(Me.btnEditDuration, "Edit Duration of this Project")
+        '
+        'btnEditTitle
+        '
+        Me.btnEditTitle.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEditTitle.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24__1_
+        Me.btnEditTitle.Location = New System.Drawing.Point(6, 19)
+        Me.btnEditTitle.Name = "btnEditTitle"
+        Me.btnEditTitle.Size = New System.Drawing.Size(18, 18)
+        Me.btnEditTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnEditTitle.TabIndex = 18
+        Me.btnEditTitle.TabStop = False
+        Me.toolTipEdit.SetToolTip(Me.btnEditTitle, "Edit Title of this Project")
+        '
+        'btnEditDesc
+        '
+        Me.btnEditDesc.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEditDesc.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24__1_
+        Me.btnEditDesc.Location = New System.Drawing.Point(6, 91)
+        Me.btnEditDesc.Name = "btnEditDesc"
+        Me.btnEditDesc.Size = New System.Drawing.Size(18, 18)
+        Me.btnEditDesc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnEditDesc.TabIndex = 17
+        Me.btnEditDesc.TabStop = False
+        Me.toolTipEdit.SetToolTip(Me.btnEditDesc, "Edit Description of this Project")
+        '
         'txtEditDesc
         '
         Me.txtEditDesc.BackColor = System.Drawing.Color.White
         Me.txtEditDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEditDesc.Font = New System.Drawing.Font("Arial", 9.0!)
         Me.txtEditDesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.txtEditDesc.Location = New System.Drawing.Point(27, 87)
+        Me.txtEditDesc.Location = New System.Drawing.Point(33, 86)
         Me.txtEditDesc.Name = "txtEditDesc"
-        Me.txtEditDesc.Size = New System.Drawing.Size(779, 42)
+        Me.txtEditDesc.Size = New System.Drawing.Size(701, 42)
         Me.txtEditDesc.TabIndex = 19
         Me.txtEditDesc.Text = ""
         Me.txtEditDesc.Visible = False
         '
-        'PictureBox3
+        'PictureBox2
         '
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox3.Image = Global.projectManagementSystem.My.Resources.Resources.add_project
-        Me.PictureBox3.Location = New System.Drawing.Point(548, 140)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(15, 14)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 20
-        Me.PictureBox3.TabStop = False
-        Me.toolTipEdit.SetToolTip(Me.PictureBox3, "Edit Duration of this Project")
+        Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.PictureBox2.Location = New System.Drawing.Point(19, 132)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(819, 1)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 159)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(819, 1)
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
         '
         'detailsDialog
         '
@@ -274,11 +274,11 @@ Partial Class detailsDialog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(850, 600)
-        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.btnEditDuration)
         Me.Controls.Add(Me.txtEditDesc)
         Me.Controls.Add(Me.btnEditTitle)
         Me.Controls.Add(Me.btnEditDesc)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtDurationDate)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
@@ -297,11 +297,11 @@ Partial Class detailsDialog
         Me.Name = "detailsDialog"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Project Information"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnEditDesc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnEditDuration, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnEditTitle, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnEditDesc, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -317,12 +317,12 @@ Partial Class detailsDialog
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtDurationDate As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtEditTitle As System.Windows.Forms.RichTextBox
     Friend WithEvents btnEditDesc As System.Windows.Forms.PictureBox
     Friend WithEvents btnEditTitle As System.Windows.Forms.PictureBox
     Friend WithEvents toolTipEdit As System.Windows.Forms.ToolTip
     Friend WithEvents txtEditDesc As System.Windows.Forms.RichTextBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents btnEditDuration As System.Windows.Forms.PictureBox
 End Class

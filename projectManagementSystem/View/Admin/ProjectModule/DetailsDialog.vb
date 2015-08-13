@@ -1,5 +1,10 @@
-﻿Public Class detailsDialog
+﻿Imports System.Text.RegularExpressions
+
+Public Class detailsDialog
     Private ProjectId
+    Private ProjectDate
+    Private ProjectFirstDate
+    Private ProjectEndDate
     Private Sub detailsDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         init()
     End Sub
@@ -8,7 +13,11 @@
         Dim box = New TaskBox(Panel1)
         Dim uModel = New UserModel
         Dim pModel = New ProjectModel
-        ProjectId = ProjectView.selectedID
+        ProjectId = ProjectView.getSelectedProjectID
+        ProjectDate = ProjectView.getSelectedProjectDate
+        setProjectDate(ProjectDate)
+        txtDurationDate.Text = ProjectDate
+
         box.clear()
         box.createList(uModel.getUserByProjectID(ProjectId))
         txtProjectTitle.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(1).ToString
@@ -18,16 +27,37 @@
         Else
             txtProjectDesc.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(2).ToString
         End If
-        '
-
-        txtEditTitle.Visible = False
-
     End Sub
-    
+
+
+
+    Public Sub setProjectDate(ByVal date_)
+        Dim dateString = date_.ToString.Split("-")
+        ProjectFirstDate = dateString(0).Trim
+        ProjectEndDate = dateString(1).Trim
+    End Sub
+
+    Public Function getStartDate()
+        Return ProjectFirstDate
+    End Function
+
+    Public Function getEndDate()
+        Return ProjectEndDate
+    End Function
+
+    Public Function getProjectID()
+        Return ProjectId
+    End Function
+
+
+
+
+
+
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
-   
+
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Dim selectedID = ProjectView.selectedID
         Dim pModel = New ProjectModel
@@ -46,7 +76,7 @@
         Else
 
         End If
-        
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
@@ -55,7 +85,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs)
-        
+
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs)
@@ -94,7 +124,7 @@
                 btnEditTitle.Enabled = True
                 e.SuppressKeyPress = True
             End If
-            
+
         End If
     End Sub
 
@@ -128,7 +158,11 @@
                 btnEditDesc.Enabled = True
                 e.SuppressKeyPress = True
             End If
-            
+
         End If
+    End Sub
+
+    Private Sub btnEditDuration_Click(sender As Object, e As EventArgs) Handles btnEditDuration.Click
+        EditDurationDate.ShowDialog()
     End Sub
 End Class

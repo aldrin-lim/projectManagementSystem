@@ -50,6 +50,7 @@
 
         durationDate.Location = New Point(5, 87)
         durationDate.Text = "Duration date:  " & vbCrLf & durationParams
+        durationDate.Tag = "date"
         durationDate.AutoSize = True
         durationDate.Font = New Font("Microsoft Sans Serif", 8.25)
 

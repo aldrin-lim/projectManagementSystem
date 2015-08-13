@@ -14,6 +14,7 @@ Public Class UserModel
             Dim dataset As New DataSet
             Dim sql = "SELECT u.`user_name`,t.`task_name`,t.`task_duration`,t.`task_remaining` FROM projects p, project_task pt, tasks t, user_task ut, users u WHERE p.`project_id` = pt.`project_id` AND pt.`task_id` = t.`task_id` AND t.`task_id` = ut.`user_id` AND ut.`user_id` = u.`user_id` AND p.`project_id` = " & id
             Dim dataAdapter = New MySqlDataAdapter
+
             mysqlcon.Open()
             sqlCmd = New MySqlCommand(sql, mysqlcon)
             dataAdapter.SelectCommand = sqlCmd

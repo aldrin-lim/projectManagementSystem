@@ -31,6 +31,14 @@ projectManagementSystem
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:projectManagementSystem.My.Resources.Resources.iconmonstr_note_19_icon_64">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

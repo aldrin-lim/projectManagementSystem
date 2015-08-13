@@ -62,7 +62,7 @@ Public Class ProjectModel
         Dim dataTable As New DataTable
         Try
             Dim dataset As New DataSet
-            Dim sql = "SELECT projects.project_id,projects.`project_name`, CONCAT(projects.`start_date`,CONCAT(' - ',projects.`end_date`) )'date', GROUP_CONCAT(users.`user_name`) , COUNT(users.`user_name`) FROM projects LEFT JOIN project_user ON projects.`project_id` = project_user.`pm_id` LEFT JOIN users ON project_user.`user_id` = users.`user_id` GROUP BY projects.`project_id`"
+            Dim sql = "SELECT projects.project_id,projects.`project_name`, CONCAT(DATE_FORMAT(projects.`start_date`,'%b %d %Y'),CONCAT('  -  ',DATE_FORMAT(projects.`end_date`,'%b %d %Y')) )'date', GROUP_CONCAT(users.`user_name`) , COUNT(users.`user_name`) FROM projects LEFT JOIN project_user ON projects.`project_id` = project_user.`pm_id` LEFT JOIN users ON project_user.`user_id` = users.`user_id` GROUP BY projects.`project_id`"
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
             sqlCmd = New MySqlCommand(sql, mysqlcon)
@@ -146,7 +146,7 @@ Public Class ProjectModel
         Dim dataTable As New DataTable
         Try
             Dim dataset As New DataSet
-            Dim sql = "SELECT projects.project_id,projects.`project_name`, CONCAT(projects.`start_date`,CONCAT(' - ',projects.`end_date`) )'date', GROUP_CONCAT(users.`user_name`) , COUNT(users.`user_name`) FROM projects LEFT JOIN project_user ON projects.`project_id` = project_user.`pm_id` LEFT JOIN users ON project_user.`user_id` = users.`user_id` WHERE projects.`project_name` LIKE '" & name & "%' GROUP BY projects.`project_id`"
+            Dim sql = "SELECT projects.project_id,projects.`project_name`, CONCAT(projects.`start_date`,CONCAT(' - ',projects.`end_date`) )'date', GROUP_CONCAT(users.`user_name`) , COUNT(users.`user_name`) FROM projects LEFT JOIN project_user ON projects.`project_id` = project_user.`pm_id` LEFT JOIN users ON project_user.`user_id` = users.`user_id` WHERE projects.`project_name` LIKE '%" & name & "%' GROUP BY projects.`project_id`"
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
             sqlCmd = New MySqlCommand(sql, mysqlcon)
@@ -167,7 +167,7 @@ Public Class ProjectModel
     Public Function updateProjectName(ByVal id, ByVal Name)
         Try
             Dim dataSet As New DataSet
-            Dim sql = "UPDATE projects SET project_name = '" & Name & "' WHERE project_id = " & id
+            Dim sql = "START TRANSACTION; UPDATE projects SET project_name = '" & Name & "' WHERE project_id = " & id & "; COMMIT;"
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
 
@@ -188,6 +188,27 @@ Public Class ProjectModel
         Try
             Dim dataSet As New DataSet
             Dim sql = "UPDATE projects SET project_description = '" & desc & "' WHERE project_id = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            Dim i = sqlCmd.ExecuteNonQuery()
+            If i > 0 Then
+                Return True
+            End If
+        Catch sqlEx As MySqlException
+            MessageBox.Show(sqlEx.Message)
+            Return False
+        Finally
+            mysqlcon.Close()
+        End Try
+    End Function
+
+
+    Public Function updateProjectDate(ByVal id, ByVal date1, ByVal date2)
+        Try
+            Dim dataSet As New DataSet
+            Dim sql = "UPDATE projects SET  projects.`start_date` = '" & date1 & "',projects.`end_date` = '" & date2 & "' WHERE project_id = " & id
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
 
