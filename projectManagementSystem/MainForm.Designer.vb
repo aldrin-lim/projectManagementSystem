@@ -22,6 +22,7 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.hoverLine = New System.Windows.Forms.PictureBox()
@@ -54,6 +55,7 @@ Partial Class MainForm
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.txtTime = New System.Windows.Forms.Label()
         Me.txtDate = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.hoverLine, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.btnProfileIcon.SuspendLayout()
@@ -420,6 +422,9 @@ Partial Class MainForm
         Me.txtDate.Text = "Sunday, July 26, 2015"
         Me.txtDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'Timer1
+        '
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -497,4 +502,5 @@ Partial Class MainForm
     Friend WithEvents txtTime As System.Windows.Forms.Label
     Friend WithEvents txtDate As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class

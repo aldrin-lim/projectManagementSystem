@@ -24,7 +24,6 @@ Partial Class detailsDialog
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.txtProjectTitle = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Label()
         Me.txtProjectDesc = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -42,6 +41,8 @@ Partial Class detailsDialog
         Me.txtEditDesc = New System.Windows.Forms.RichTextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.btnEditDuration, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEditTitle, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEditDesc, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,23 +54,11 @@ Partial Class detailsDialog
         '
         Me.txtProjectTitle.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProjectTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.txtProjectTitle.Location = New System.Drawing.Point(26, 8)
+        Me.txtProjectTitle.Location = New System.Drawing.Point(26, 20)
         Me.txtProjectTitle.Name = "txtProjectTitle"
         Me.txtProjectTitle.Size = New System.Drawing.Size(676, 75)
         Me.txtProjectTitle.TabIndex = 1
         Me.txtProjectTitle.Text = "Empolyee Information and Management System"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(179, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(734, 139)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 16)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Edit This Project"
         '
         'btnDelete
         '
@@ -77,7 +66,7 @@ Partial Class detailsDialog
         Me.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDelete.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(179, Byte), Integer))
-        Me.btnDelete.Location = New System.Drawing.Point(610, 139)
+        Me.btnDelete.Location = New System.Drawing.Point(720, 170)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(118, 16)
         Me.btnDelete.TabIndex = 4
@@ -88,7 +77,7 @@ Partial Class detailsDialog
         Me.txtProjectDesc.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.txtProjectDesc.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProjectDesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.txtProjectDesc.Location = New System.Drawing.Point(33, 86)
+        Me.txtProjectDesc.Location = New System.Drawing.Point(33, 117)
         Me.txtProjectDesc.Name = "txtProjectDesc"
         Me.txtProjectDesc.Size = New System.Drawing.Size(779, 42)
         Me.txtProjectDesc.TabIndex = 5
@@ -97,10 +86,10 @@ Partial Class detailsDialog
         'Panel1
         '
         Me.Panel1.AutoScroll = True
-        Me.Panel1.Location = New System.Drawing.Point(19, 170)
+        Me.Panel1.Location = New System.Drawing.Point(19, 201)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(0, 0, 0, 30)
-        Me.Panel1.Size = New System.Drawing.Size(819, 423)
+        Me.Panel1.Size = New System.Drawing.Size(819, 400)
         Me.Panel1.TabIndex = 6
         '
         'Label5
@@ -109,7 +98,7 @@ Partial Class detailsDialog
         Me.Label5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Gray
-        Me.Label5.Location = New System.Drawing.Point(19, 139)
+        Me.Label5.Location = New System.Drawing.Point(19, 170)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 16)
         Me.Label5.TabIndex = 7
@@ -122,7 +111,7 @@ Partial Class detailsDialog
         Me.Label6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Gray
-        Me.Label6.Location = New System.Drawing.Point(85, 139)
+        Me.Label6.Location = New System.Drawing.Point(85, 170)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(98, 16)
         Me.Label6.TabIndex = 9
@@ -135,7 +124,7 @@ Partial Class detailsDialog
         Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Gray
-        Me.Label7.Location = New System.Drawing.Point(255, 139)
+        Me.Label7.Location = New System.Drawing.Point(255, 170)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(59, 16)
         Me.Label7.TabIndex = 11
@@ -148,7 +137,7 @@ Partial Class detailsDialog
         Me.Label8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Gray
-        Me.Label8.Location = New System.Drawing.Point(189, 139)
+        Me.Label8.Location = New System.Drawing.Point(189, 170)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(70, 16)
         Me.Label8.TabIndex = 10
@@ -161,7 +150,7 @@ Partial Class detailsDialog
         Me.txtDurationDate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.txtDurationDate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDurationDate.ForeColor = System.Drawing.Color.Gray
-        Me.txtDurationDate.Location = New System.Drawing.Point(397, 139)
+        Me.txtDurationDate.Location = New System.Drawing.Point(397, 170)
         Me.txtDurationDate.Name = "txtDurationDate"
         Me.txtDurationDate.Size = New System.Drawing.Size(151, 16)
         Me.txtDurationDate.TabIndex = 13
@@ -174,7 +163,7 @@ Partial Class detailsDialog
         Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Gray
-        Me.Label3.Location = New System.Drawing.Point(331, 139)
+        Me.Label3.Location = New System.Drawing.Point(331, 170)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 16)
         Me.Label3.TabIndex = 12
@@ -187,7 +176,7 @@ Partial Class detailsDialog
         Me.txtEditTitle.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEditTitle.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold)
         Me.txtEditTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.txtEditTitle.Location = New System.Drawing.Point(31, 8)
+        Me.txtEditTitle.Location = New System.Drawing.Point(31, 20)
         Me.txtEditTitle.Name = "txtEditTitle"
         Me.txtEditTitle.Size = New System.Drawing.Size(606, 75)
         Me.txtEditTitle.TabIndex = 15
@@ -205,7 +194,7 @@ Partial Class detailsDialog
         '
         Me.btnEditDuration.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEditDuration.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24
-        Me.btnEditDuration.Location = New System.Drawing.Point(567, 136)
+        Me.btnEditDuration.Location = New System.Drawing.Point(567, 167)
         Me.btnEditDuration.Name = "btnEditDuration"
         Me.btnEditDuration.Size = New System.Drawing.Size(18, 18)
         Me.btnEditDuration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -217,7 +206,7 @@ Partial Class detailsDialog
         '
         Me.btnEditTitle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEditTitle.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24__1_
-        Me.btnEditTitle.Location = New System.Drawing.Point(6, 19)
+        Me.btnEditTitle.Location = New System.Drawing.Point(6, 1)
         Me.btnEditTitle.Name = "btnEditTitle"
         Me.btnEditTitle.Size = New System.Drawing.Size(18, 18)
         Me.btnEditTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -229,7 +218,7 @@ Partial Class detailsDialog
         '
         Me.btnEditDesc.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnEditDesc.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24__1_
-        Me.btnEditDesc.Location = New System.Drawing.Point(6, 91)
+        Me.btnEditDesc.Location = New System.Drawing.Point(6, 93)
         Me.btnEditDesc.Name = "btnEditDesc"
         Me.btnEditDesc.Size = New System.Drawing.Size(18, 18)
         Me.btnEditDesc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -243,7 +232,7 @@ Partial Class detailsDialog
         Me.txtEditDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtEditDesc.Font = New System.Drawing.Font("Arial", 9.0!)
         Me.txtEditDesc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.txtEditDesc.Location = New System.Drawing.Point(33, 86)
+        Me.txtEditDesc.Location = New System.Drawing.Point(33, 117)
         Me.txtEditDesc.Name = "txtEditDesc"
         Me.txtEditDesc.Size = New System.Drawing.Size(701, 42)
         Me.txtEditDesc.TabIndex = 19
@@ -253,7 +242,7 @@ Partial Class detailsDialog
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.PictureBox2.Location = New System.Drawing.Point(19, 132)
+        Me.PictureBox2.Location = New System.Drawing.Point(19, 163)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(819, 1)
         Me.PictureBox2.TabIndex = 8
@@ -262,18 +251,46 @@ Partial Class detailsDialog
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(230, Byte), Integer))
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 159)
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 190)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(819, 1)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gray
+        Me.Label1.Location = New System.Drawing.Point(33, 95)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(73, 14)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Description:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Gray
+        Me.Label2.Location = New System.Drawing.Point(28, 3)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(83, 14)
+        Me.Label2.TabIndex = 22
+        Me.Label2.Text = "Project Name:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'detailsDialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(850, 600)
+        Me.ClientSize = New System.Drawing.Size(850, 612)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnEditDuration)
         Me.Controls.Add(Me.btnEditTitle)
         Me.Controls.Add(Me.btnEditDesc)
@@ -286,7 +303,6 @@ Partial Class detailsDialog
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnDelete)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtEditTitle)
         Me.Controls.Add(Me.txtProjectTitle)
@@ -308,7 +324,6 @@ Partial Class detailsDialog
     End Sub
     Friend WithEvents txtProjectTitle As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnDelete As System.Windows.Forms.Label
     Friend WithEvents txtProjectDesc As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -325,4 +340,6 @@ Partial Class detailsDialog
     Friend WithEvents toolTipEdit As System.Windows.Forms.ToolTip
     Friend WithEvents txtEditDesc As System.Windows.Forms.RichTextBox
     Friend WithEvents btnEditDuration As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

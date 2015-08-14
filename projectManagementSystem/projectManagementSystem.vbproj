@@ -87,9 +87,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\sqlCon.vb" />
+    <Compile Include="Controller\ProjectTaskBox.vb" />
     <Compile Include="Controller\TaskBox.vb" />
     <Compile Include="Controller\UserBox.vb" />
     <Compile Include="Model\ProjectModel.vb" />
+    <Compile Include="Model\TaskModel.vb" />
     <Compile Include="Model\UserModel.vb" />
     <Compile Include="View\Admin\ProjectModule\AddDialog.Designer.vb">
       <DependentUpon>AddDialog.vb</DependentUpon>
@@ -145,6 +147,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="View\Admin\TaskModule\TaskView.designer.vb">
+      <DependentUpon>TaskView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\TaskModule\TaskView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\Admin\UserModule\UserDetail.Designer.vb">
       <DependentUpon>UserDetail.vb</DependentUpon>
     </Compile>
@@ -182,6 +190,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\TaskModule\TaskView.resx">
+      <DependentUpon>TaskView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\UserModule\UserDetail.resx">
       <DependentUpon>UserDetail.vb</DependentUpon>

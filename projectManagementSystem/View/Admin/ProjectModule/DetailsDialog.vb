@@ -9,8 +9,8 @@ Public Class detailsDialog
         init()
     End Sub
 
-    Private Sub init()
-        Dim box = New TaskBox(Panel1)
+    Public Sub init()
+        Dim box = New ProjectTaskBox(Panel1)
         Dim uModel = New UserModel
         Dim pModel = New ProjectModel
         ProjectId = ProjectView.getSelectedProjectID
@@ -54,12 +54,12 @@ Public Class detailsDialog
 
 
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        Dim selectedID = ProjectView.selectedID
+        Dim selectedID = getProjectID()
         Dim pModel = New ProjectModel
         Dim result = MessageBox.Show("Are you sure you want to delete this project?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = Windows.Forms.DialogResult.Yes Then
@@ -97,7 +97,7 @@ Public Class detailsDialog
     '----------------EDIT TITLE
 
     Private Sub btnEditTitle_Click(sender As Object, e As EventArgs) Handles btnEditTitle.Click
-        Dim prompt = MessageBox.Show("Edit Title?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim prompt = MessageBox.Show("Edit Project Name?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If prompt = Windows.Forms.DialogResult.Yes Then
             txtEditTitle.Text = txtProjectTitle.Text
             txtEditTitle.Visible = True
@@ -133,7 +133,7 @@ Public Class detailsDialog
     '--------------------EDIT DESC
 
     Private Sub btnEditDesc_Click(sender As Object, e As EventArgs) Handles btnEditDesc.Click
-        Dim prompt = MessageBox.Show("Edit Title?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim prompt = MessageBox.Show("Edit Project Description?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If prompt = Windows.Forms.DialogResult.Yes Then
             txtEditDesc.Text = txtProjectDesc.Text
             txtEditDesc.Visible = True

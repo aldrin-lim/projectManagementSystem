@@ -59,6 +59,9 @@ Partial Class ProjectView
         Me.Label2.Text = "All Project"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'timeDisplay
+        '
+        '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.LightGray

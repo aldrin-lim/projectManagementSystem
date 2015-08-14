@@ -1,12 +1,30 @@
 ﻿Imports MySql.Data.MySqlClient
-
 Public Class TaskModel
     Private mysqlcon As MySqlConnection
     Private sqlCmd As MySqlCommand
     Public Sub New()
         mysqlcon = New MySqlConnection(connectionString)
     End Sub
-
+    Public Function getAllTask() As DataTable
+        Dim datatable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT projects.project_name,tasks.task_id,tasks.task_name,tasks.task_duration,tasks.task_remaining, users.user_name FROM projects, project_task, tasks, user_task, users where projects.project_id = project_task.project_id AND tasks.task_id = project_task.task_id and tasks.task_id = user_task.task_id and user_task.user_id = users.user_id"
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "projects, project_task, tasks, user_task, users")
+            datatable = dataset.Tables("projects, project_task, tasks, user_task, users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return datatable
+    End Function
 
 
     Public Function getAllTaskByID(ByVal id) As DataTable
@@ -29,29 +47,6 @@ Public Class TaskModel
         End Try
         Return dataTable
     End Function
-
-    Public Function getTaskByIDandUser(ByVal id) As DataTable
-        Dim dataTable As New DataTable
-        Try
-            Dim dataset As New DataSet
-            Dim sql = "SELECT tasks.task_name, tasks.task_description, tasks.task_duration, users.user_name FROM tasks, user_task, users WHERE users.user_id = user_task.user_id AND user_task.task_id = " & id
-            Dim dataAdapter = New MySqlDataAdapter
-            mysqlcon.Open()
-            sqlCmd = New MySqlCommand(sql, mysqlcon)
-            dataAdapter.SelectCommand = sqlCmd
-            dataAdapter.Fill(dataset, "tasks, user_task, users")
-            dataTable = dataset.Tables("tasks, user_task, users")
-        Catch ex1 As MySqlException
-            MessageBox.Show(ex1.Message)
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        Finally
-            mysqlcon.Close()
-        End Try
-        Return dataTable
-
-    End Function
-
     Public Function createTask(ByVal taskName As String, ByVal taskDesc As String, taskDuration As Integer)
         Try
             Dim dataSet As New DataSet

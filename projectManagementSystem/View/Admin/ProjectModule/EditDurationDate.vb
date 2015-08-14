@@ -11,7 +11,9 @@
         Dim project As New ProjectModel
         If project.updateProjectDate(detailsDialog.getProjectID, startDate, endDate) Then
             detailsDialog.txtDurationDate.Text = dateStart.Value.ToString("MMM dd yyyy") & "  -  " & dateEnd.Value.ToString("MMM dd yyyy")
+            detailsDialog.setProjectDate(detailsDialog.txtDurationDate.Text)
             ProjectView.init()
+
             Me.Close()
         Else
             MessageBox.Show("Something Wrong. Try Again")

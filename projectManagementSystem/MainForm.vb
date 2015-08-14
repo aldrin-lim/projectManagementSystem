@@ -36,6 +36,7 @@
         ProjectView.Show()
         ProjectView.Location = New Point(229, 0)
         UserView.Hide()
+        TaskView.Hide()
 
     End Sub
 
@@ -49,6 +50,7 @@
         UserView.Show()
         UserView.Location = New Point(229, 0)
         ProjectView.Hide()
+        TaskView.Hide()
     End Sub
 
     Private Sub btnTeamModule_MouseEnter(sender As Object, e As EventArgs) Handles btnTeamModule.MouseEnter, iconTeam.MouseEnter, txtTeamIcon.MouseEnter
@@ -64,6 +66,11 @@
     '--------TASK MODULE ------------
     Private Sub btnTaskModule_Click(sender As Object, e As EventArgs) Handles btnTaskModule.Click, iconTask.Click, txtTaskICon.Click
         hoverLine.Location = New Point(0, 211)
+        TaskView.MdiParent = Me
+        TaskView.Show()
+        TaskView.Location = New Point(229, 0)
+        ProjectView.Hide()
+        UserView.Hide()
     End Sub
 
     Private Sub btnTaskModule_MouseEnter(sender As Object, e As EventArgs) Handles btnTaskModule.MouseEnter, iconTask.MouseEnter, txtTaskICon.MouseEnter
@@ -147,4 +154,11 @@
 
     
    
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+    End Sub
+
+    Private Sub btnProjectModule_Paint(sender As Object, e As PaintEventArgs) Handles btnProjectModule.Paint
+
+    End Sub
 End Class

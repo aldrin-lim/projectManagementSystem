@@ -3,7 +3,15 @@
 Public Class AddDialog
 
     Private Sub AddDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        init()
+    End Sub
 
+    Public Sub init()
+        Dim uModel = New UserModel
+        Dim result = uModel.getAllAvailableUser
+        For i = 0 To result.Rows.Count - 1
+            lvAvailablePeople.Items.Add(result.Rows(i).Item(1))
+        Next
     End Sub
 
     Private Sub btnCreateProject_Click(sender As Object, e As EventArgs) Handles btnCreateProject.Click
@@ -44,5 +52,21 @@ Public Class AddDialog
         End If
 
 
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Dim selectedIndex = lvAvailablePeople.SelectedIndices(0)
+        Dim selectedValue = lvAvailablePeople.Items(selectedIndex).SubItems(0).Text
+
+        lvSelectedPeople.Items.Add(selectedValue)
+        lvAvailablePeople.Items.RemoveAt(selectedIndex)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim selectedIndex = lvSelectedPeople.SelectedIndices(0)
+        Dim selectedValue = lvSelectedPeople.Items(selectedIndex).SubItems(0).Text
+
+        lvAvailablePeople.Items.Add(selectedValue)
+        lvSelectedPeople.Items.RemoveAt(selectedIndex)
     End Sub
 End Class

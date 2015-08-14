@@ -123,7 +123,7 @@ Public Class ProjectModel
     Public Function deleteProject(ByVal id)
         Try
             Dim dataSet As New DataSet
-            Dim sql = "DELETE FROM projects WHERE project_id = " & id & ""
+            Dim sql = "DELETE FROM projects WHERE project_id = " & id
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
 

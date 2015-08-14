@@ -32,8 +32,8 @@ Partial Class UserDetail
         Me.btnEditPic = New System.Windows.Forms.PictureBox()
         Me.dialogProfilePicture = New System.Windows.Forms.OpenFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtProject = New System.Windows.Forms.Label()
+        Me.txtTask = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -141,27 +141,27 @@ Partial Class UserDetail
         Me.Label1.TabIndex = 33
         Me.Label1.Text = "On Going Project:"
         '
-        'Label2
+        'txtProject
         '
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(315, 141)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(378, 32)
-        Me.Label2.TabIndex = 34
-        Me.Label2.Text = "Android Games Online"
+        Me.txtProject.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.txtProject.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtProject.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.txtProject.Location = New System.Drawing.Point(315, 141)
+        Me.txtProject.Name = "txtProject"
+        Me.txtProject.Size = New System.Drawing.Size(289, 32)
+        Me.txtProject.TabIndex = 34
+        Me.txtProject.Text = "Android Games Online"
         '
-        'Label3
+        'txtTask
         '
-        Me.Label3.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(314, 178)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(378, 32)
-        Me.Label3.TabIndex = 36
-        Me.Label3.Text = "Creation of UI on Android Games Online"
+        Me.txtTask.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.txtTask.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTask.ForeColor = System.Drawing.Color.FromArgb(CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.txtTask.Location = New System.Drawing.Point(314, 178)
+        Me.txtTask.Name = "txtTask"
+        Me.txtTask.Size = New System.Drawing.Size(290, 32)
+        Me.txtTask.TabIndex = 36
+        Me.txtTask.Text = "Creation of UI on Android Games Online"
         '
         'Label4
         '
@@ -196,7 +196,7 @@ Partial Class UserDetail
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox3.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_edit_7_icon_24
-        Me.PictureBox3.Location = New System.Drawing.Point(586, 69)
+        Me.PictureBox3.Location = New System.Drawing.Point(586, 63)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(18, 18)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -212,9 +212,9 @@ Partial Class UserDetail
         Me.ClientSize = New System.Drawing.Size(613, 218)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtTask)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtProject)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnEditPic)
         Me.Controls.Add(Me.btnEditUserPosition)
@@ -245,8 +245,8 @@ Partial Class UserDetail
     Friend WithEvents btnEditPic As System.Windows.Forms.PictureBox
     Friend WithEvents dialogProfilePicture As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtProject As System.Windows.Forms.Label
+    Friend WithEvents txtTask As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip

@@ -11,6 +11,14 @@
         Dim result = uModel.getUserByID(selectedID).Rows(0)
         pboxUserImage.ImageLocation = "http://localhost/pms_images/" & result.Item(3).ToString
         txtUserName.Text = result.Item(1).ToString
+        If uModel.getUserProjectAndTaskByUserID(selectedID).Rows.Count > 0 Then
+            txtProject.Text = uModel.getUserProjectAndTaskByUserID(selectedID).Rows(0).Item(0).ToString
+            txtTask.Text = uModel.getUserProjectAndTaskByUserID(selectedID).Rows(0).Item(1).ToString
+        Else
+            txtProject.Text = " (No Project Related) "
+            txtTask.Text = " (No Task Assigned) "
+        End If
+
         If String.IsNullOrEmpty(result.Item(2).ToString) = False Then
 
             txtUserPosition.Text = result.Item(2).ToString

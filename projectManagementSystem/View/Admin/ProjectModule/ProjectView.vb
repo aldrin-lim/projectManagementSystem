@@ -117,4 +117,6 @@ Public Class ProjectView
     Public Sub clearSearch()
         txtSearch.Clear()
     End Sub
+
+ 
 End Class
