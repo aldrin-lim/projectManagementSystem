@@ -25,7 +25,10 @@ Partial Class TaskView
         Me.Label2 = New System.Windows.Forms.Label()
         Me.panelBox = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.iconCreateUser = New System.Windows.Forms.PictureBox()
+        Me.btnAddTask = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -58,20 +61,47 @@ Partial Class TaskView
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
         '
+        'iconCreateUser
+        '
+        Me.iconCreateUser.BackColor = System.Drawing.Color.Transparent
+        Me.iconCreateUser.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.iconCreateUser.Image = Global.projectManagementSystem.My.Resources.Resources.add_task
+        Me.iconCreateUser.Location = New System.Drawing.Point(29, 140)
+        Me.iconCreateUser.Name = "iconCreateUser"
+        Me.iconCreateUser.Size = New System.Drawing.Size(90, 90)
+        Me.iconCreateUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.iconCreateUser.TabIndex = 25
+        Me.iconCreateUser.TabStop = False
+        '
+        'btnAddTask
+        '
+        Me.btnAddTask.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAddTask.Font = New System.Drawing.Font("Arial", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddTask.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.btnAddTask.Location = New System.Drawing.Point(12, 224)
+        Me.btnAddTask.Name = "btnAddTask"
+        Me.btnAddTask.Size = New System.Drawing.Size(131, 32)
+        Me.btnAddTask.TabIndex = 25
+        Me.btnAddTask.Text = "Create New Task"
+        Me.btnAddTask.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TaskView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(875, 657)
+        Me.Controls.Add(Me.iconCreateUser)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.panelBox)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnAddTask)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "TaskView"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 20)
         Me.Text = "TaskView"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -79,4 +109,6 @@ Partial Class TaskView
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents panelBox As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents iconCreateUser As System.Windows.Forms.PictureBox
+    Friend WithEvents btnAddTask As System.Windows.Forms.Label
 End Class
