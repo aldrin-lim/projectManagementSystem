@@ -109,3 +109,4 @@ C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\o
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.vbproj.GenerateResource.Cache
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
+C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddTaskDialog.resources

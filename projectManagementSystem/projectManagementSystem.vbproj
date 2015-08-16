@@ -147,10 +147,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="View\Admin\TaskModule\AddDialog.Designer.vb">
-      <DependentUpon>AddDialog.vb</DependentUpon>
+    <Compile Include="View\Admin\TaskModule\AddTaskDialog.Designer.vb">
+      <DependentUpon>AddTaskDialog.vb</DependentUpon>
     </Compile>
-    <Compile Include="View\Admin\TaskModule\AddDialog.vb">
+    <Compile Include="View\Admin\TaskModule\AddTaskDialog.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Admin\TaskModule\TaskView.designer.vb">
@@ -197,8 +197,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Admin\TaskModule\AddDialog.resx">
-      <DependentUpon>AddDialog.vb</DependentUpon>
+    <EmbeddedResource Include="View\Admin\TaskModule\AddTaskDialog.resx">
+      <DependentUpon>AddTaskDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\TaskModule\TaskView.resx">
       <DependentUpon>TaskView.vb</DependentUpon>

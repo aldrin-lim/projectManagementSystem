@@ -27,6 +27,8 @@ Partial Class TaskView
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.iconCreateUser = New System.Windows.Forms.PictureBox()
         Me.btnAddTask = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -85,12 +87,32 @@ Partial Class TaskView
         Me.btnAddTask.Text = "Create New Task"
         Me.btnAddTask.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Code Module 1", "Code Module 2", "Code Module 3", "Code Module 4", "Code Module 5", "Create UI"})
+        Me.ComboBox1.Location = New System.Drawing.Point(29, 284)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 26
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(26, 336)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
+        '
         'TaskView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(875, 657)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.iconCreateUser)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.panelBox)
@@ -111,4 +133,6 @@ Partial Class TaskView
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents iconCreateUser As System.Windows.Forms.PictureBox
     Friend WithEvents btnAddTask As System.Windows.Forms.Label
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
