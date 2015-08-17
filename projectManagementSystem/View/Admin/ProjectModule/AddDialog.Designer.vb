@@ -35,7 +35,6 @@ Partial Class AddDialog
         Me.txtProjectDesc = New System.Windows.Forms.RichTextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -158,7 +157,7 @@ Partial Class AddDialog
         Me.txtProjectDesc.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtProjectDesc.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtProjectDesc.ForeColor = System.Drawing.Color.DimGray
-        Me.txtProjectDesc.Location = New System.Drawing.Point(3, 3)
+        Me.txtProjectDesc.Location = New System.Drawing.Point(225, 43)
         Me.txtProjectDesc.Name = "txtProjectDesc"
         Me.txtProjectDesc.Size = New System.Drawing.Size(320, 83)
         Me.txtProjectDesc.TabIndex = 17
@@ -168,7 +167,6 @@ Partial Class AddDialog
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.txtProjectDesc)
         Me.Panel3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel3.Location = New System.Drawing.Point(139, 176)
         Me.Panel3.Name = "Panel3"
@@ -180,7 +178,14 @@ Partial Class AddDialog
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(479, 331)
+=======
+        Me.ClientSize = New System.Drawing.Size(479, 533)
+        Me.Controls.Add(Me.txtProjectDesc)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+>>>>>>> 316c63392903edc1d3bc657ac53bfb44ba88671d
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnCreateProject)
@@ -197,7 +202,6 @@ Partial Class AddDialog
         Me.Name = "AddDialog"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
