@@ -40,4 +40,8 @@ Public Class TaskView
             End If
         Next
     End Sub
+
+    Private Sub btnAddTask_Click(sender As Object, e As EventArgs) Handles btnAddTask.Click, iconCreateTask.Click
+        AddTaskDialog.ShowDialog()
+    End Sub
 End Class
