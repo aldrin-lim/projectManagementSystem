@@ -225,4 +225,33 @@ Public Class ProjectModel
         End Try
     End Function
 
+
+
+    Public Function sortProjectByName(ByVal order) As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql
+            If order = "asc" Then
+                sql = "SELECT projects.project_id,projects.`project_name`, CONCAT(DATE_FORMAT(projects.`start_date`,'%b %d %Y'),CONCAT('  -  ',DATE_FORMAT(projects.`end_date`,'%b %d %Y')) )'date', GROUP_CONCAT(users.`user_name`) , COUNT(users.`user_name`) FROM projects LEFT JOIN project_user ON projects.`project_id` = project_user.`pm_id` LEFT JOIN users ON project_user.`user_id` = users.`user_id` GROUP BY projects.`project_id` ORDER BY project_name"
+            ElseIf order = "desc" Then
+                sql = "SELECT projects.project_id,projects.`project_name`, CONCAT(DATE_FORMAT(projects.`start_date`,'%b %d %Y'),CONCAT('  -  ',DATE_FORMAT(projects.`end_date`,'%b %d %Y')) )'date', GROUP_CONCAT(users.`user_name`) , COUNT(users.`user_name`) FROM projects LEFT JOIN project_user ON projects.`project_id` = project_user.`pm_id` LEFT JOIN users ON project_user.`user_id` = users.`user_id` GROUP BY projects.`project_id` ORDER BY project_name desc"
+            End If
+
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "projects")
+            dataTable = dataset.Tables("projects")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
 End Class

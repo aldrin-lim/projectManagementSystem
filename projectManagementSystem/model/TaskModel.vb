@@ -65,5 +65,28 @@ Public Class TaskModel
         Finally
             mysqlcon.Close()
         End Try
+
     End Function
+
+    Public Function getCountOfTaskByProjectID(ByVal id) As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT COUNT(t.`task_name`) FROM projects p, project_task pt, tasks t, user_task ut, users u WHERE p.`project_id` = pt.`project_id` AND pt.`task_id` = t.`task_id` AND t.`task_id` = ut.`task_id` AND ut.`user_id` = u.`user_id` AND p.`project_id` = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "projects, project_task, tasks, user_task, users")
+            dataTable = dataset.Tables("projects, project_task, tasks, user_task, users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
 End Class

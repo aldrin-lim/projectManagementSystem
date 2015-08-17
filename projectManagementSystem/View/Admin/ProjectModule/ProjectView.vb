@@ -45,8 +45,8 @@ Public Class ProjectView
 
 
     Public Sub init()
-        timeDisplay.Start()
-        Dim dt As Date = Date.Today
+        'timeDisplay.Start()
+        'Dim dt As Date = Date.Today
 
 
         Dim pbox As New ProjectBox(panelBox)
@@ -62,6 +62,21 @@ Public Class ProjectView
         'End If        
         attachHandlers()
     End Sub
+
+
+    Public Sub deleteThumbnail(ByVal id)
+        setSelectedProjectID(id)
+        Dim idx = getSelectedProjectID()
+        Dim project As New ProjectModel
+        Dim result = MessageBox.Show("Are you sure you want to delete this project?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = Windows.Forms.DialogResult.Yes Then
+            project.deleteProject(idx)
+            init()
+        End If
+
+       
+    End Sub
+
 
     Public Sub attachHandlers()
         For Each ctrl In panelBox.Controls
@@ -79,6 +94,9 @@ Public Class ProjectView
                 For Each panelctrl As Label In ctrl.Controls
                     If panelctrl.Text = "View Details" Then
                         AddHandler panelctrl.Click, Sub(sender, e) viewProjectDetails(projectId, projectDt)
+                    End If
+                    If panelctrl.Text = "x" Then
+                        AddHandler panelctrl.Click, Sub(sender, e) deleteThumbnail(projectId)
                     End If
 
                 Next
@@ -119,4 +137,19 @@ Public Class ProjectView
     End Sub
 
  
+    Private Sub btnSortA_Click(sender As Object, e As EventArgs) Handles btnSortA.Click
+        Dim pbox As New ProjectBox(panelBox)
+        Dim project As New ProjectModel
+        pbox.clearAllBox()
+        pbox.createList(project.sortProjectByName("asc"))
+        attachHandlers()
+    End Sub
+
+    Private Sub btnSortD_Click(sender As Object, e As EventArgs) Handles btnSortD.Click
+        Dim pbox As New ProjectBox(panelBox)
+        Dim project As New ProjectModel
+        pbox.clearAllBox()
+        pbox.createList(project.sortProjectByName("desc"))
+        attachHandlers()
+    End Sub
 End Class

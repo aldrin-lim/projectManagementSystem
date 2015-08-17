@@ -91,3 +91,4 @@ F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSy
 F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
 F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
 F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskView.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskView.resources

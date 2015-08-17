@@ -30,17 +30,10 @@ Partial Class AddDialog
         Me.dateStart = New System.Windows.Forms.DateTimePicker()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dateEnd = New System.Windows.Forms.DateTimePicker()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.lvAvailablePeople = New System.Windows.Forms.ListView()
-        Me.lvSelectedPeople = New System.Windows.Forms.ListView()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.btnCreateProject = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtProjectDesc = New System.Windows.Forms.RichTextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -129,71 +122,6 @@ Partial Class AddDialog
         Me.dateEnd.Size = New System.Drawing.Size(145, 20)
         Me.dateEnd.TabIndex = 9
         '
-        'Label5
-        '
-        Me.Label5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(12, 271)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(121, 18)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Members"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lvAvailablePeople
-        '
-        Me.lvAvailablePeople.FullRowSelect = True
-        Me.lvAvailablePeople.Location = New System.Drawing.Point(19, 315)
-        Me.lvAvailablePeople.Name = "lvAvailablePeople"
-        Me.lvAvailablePeople.Size = New System.Drawing.Size(187, 159)
-        Me.lvAvailablePeople.TabIndex = 11
-        Me.lvAvailablePeople.UseCompatibleStateImageBehavior = False
-        Me.lvAvailablePeople.View = System.Windows.Forms.View.List
-        '
-        'lvSelectedPeople
-        '
-        Me.lvSelectedPeople.FullRowSelect = True
-        Me.lvSelectedPeople.Location = New System.Drawing.Point(279, 315)
-        Me.lvSelectedPeople.Name = "lvSelectedPeople"
-        Me.lvSelectedPeople.Size = New System.Drawing.Size(188, 159)
-        Me.lvSelectedPeople.TabIndex = 12
-        Me.lvSelectedPeople.UseCompatibleStateImageBehavior = False
-        Me.lvSelectedPeople.View = System.Windows.Forms.View.List
-        '
-        'btnAdd
-        '
-        Me.btnAdd.AutoSize = True
-        Me.btnAdd.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(179, Byte), Integer))
-        Me.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.btnAdd.FlatAppearance.CheckedBackColor = System.Drawing.Color.Maroon
-        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdd.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.ForeColor = System.Drawing.Color.White
-        Me.btnAdd.Location = New System.Drawing.Point(225, 351)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(38, 31)
-        Me.btnAdd.TabIndex = 13
-        Me.btnAdd.Text = ">"
-        Me.btnAdd.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.AutoSize = True
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(179, Byte), Integer))
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.Button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Maroon
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(225, 388)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(38, 28)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "<"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'btnCreateProject
         '
         Me.btnCreateProject.AutoSize = True
@@ -206,7 +134,7 @@ Partial Class AddDialog
         Me.btnCreateProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreateProject.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCreateProject.ForeColor = System.Drawing.Color.White
-        Me.btnCreateProject.Location = New System.Drawing.Point(151, 494)
+        Me.btnCreateProject.Location = New System.Drawing.Point(139, 289)
         Me.btnCreateProject.Name = "btnCreateProject"
         Me.btnCreateProject.Size = New System.Drawing.Size(192, 30)
         Me.btnCreateProject.TabIndex = 15
@@ -247,46 +175,15 @@ Partial Class AddDialog
         Me.Panel3.Size = New System.Drawing.Size(328, 91)
         Me.Panel3.TabIndex = 18
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(67, 297)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(98, 15)
-        Me.Label7.TabIndex = 19
-        Me.Label7.Text = "Available People"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(283, 297)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(179, 15)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "People to include in this Project"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'AddDialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(479, 533)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
+        Me.ClientSize = New System.Drawing.Size(479, 331)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnCreateProject)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.lvSelectedPeople)
-        Me.Controls.Add(Me.lvAvailablePeople)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.dateEnd)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.dateStart)
@@ -313,15 +210,8 @@ Partial Class AddDialog
     Friend WithEvents dateStart As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents dateEnd As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents lvAvailablePeople As System.Windows.Forms.ListView
-    Friend WithEvents lvSelectedPeople As System.Windows.Forms.ListView
-    Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents btnCreateProject As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtProjectDesc As System.Windows.Forms.RichTextBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class

@@ -293,6 +293,12 @@
   <ItemGroup>
     <None Include="Resources\iconmonstr-user-11-icon-128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-sort-14-icon-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconmonstr-sort-16-icon-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

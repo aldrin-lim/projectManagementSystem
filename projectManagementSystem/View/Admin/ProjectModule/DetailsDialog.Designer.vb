@@ -28,8 +28,8 @@ Partial Class detailsDialog
         Me.txtProjectDesc = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtTaskCount = New System.Windows.Forms.Label()
+        Me.txtMemberCount = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtDurationDate = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -105,31 +105,31 @@ Partial Class detailsDialog
         Me.Label5.Text = "All Tasks: "
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label6
+        'txtTaskCount
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Gray
-        Me.Label6.Location = New System.Drawing.Point(85, 170)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(98, 16)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Total of 8 Tasks"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtTaskCount.AutoSize = True
+        Me.txtTaskCount.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.txtTaskCount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTaskCount.ForeColor = System.Drawing.Color.Gray
+        Me.txtTaskCount.Location = New System.Drawing.Point(85, 170)
+        Me.txtTaskCount.Name = "txtTaskCount"
+        Me.txtTaskCount.Size = New System.Drawing.Size(98, 16)
+        Me.txtTaskCount.TabIndex = 9
+        Me.txtTaskCount.Text = "Total of 8 Tasks"
+        Me.txtTaskCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label7
+        'txtMemberCount
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Gray
-        Me.Label7.Location = New System.Drawing.Point(255, 170)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(59, 16)
-        Me.Label7.TabIndex = 11
-        Me.Label7.Text = "3 People"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtMemberCount.AutoSize = True
+        Me.txtMemberCount.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.txtMemberCount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMemberCount.ForeColor = System.Drawing.Color.Gray
+        Me.txtMemberCount.Location = New System.Drawing.Point(255, 170)
+        Me.txtMemberCount.Name = "txtMemberCount"
+        Me.txtMemberCount.Size = New System.Drawing.Size(59, 16)
+        Me.txtMemberCount.TabIndex = 11
+        Me.txtMemberCount.Text = "3 People"
+        Me.txtMemberCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label8
         '
@@ -288,7 +288,7 @@ Partial Class detailsDialog
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(850, 612)
+        Me.ClientSize = New System.Drawing.Size(850, 600)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnEditDuration)
@@ -296,9 +296,9 @@ Partial Class detailsDialog
         Me.Controls.Add(Me.btnEditDesc)
         Me.Controls.Add(Me.txtDurationDate)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtMemberCount)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.txtTaskCount)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Panel1)
@@ -329,8 +329,8 @@ Partial Class detailsDialog
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents txtTaskCount As System.Windows.Forms.Label
+    Friend WithEvents txtMemberCount As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtDurationDate As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
