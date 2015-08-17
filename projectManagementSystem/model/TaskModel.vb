@@ -9,13 +9,13 @@ Public Class TaskModel
         Dim datatable As New DataTable
         Try
             Dim dataset As New DataSet
-            Dim sql = "SELECT projects.project_name,tasks.task_id,tasks.task_name,tasks.task_duration,tasks.task_remaining, users.user_name FROM projects, project_task, tasks, user_task, users where projects.project_id = project_task.project_id AND tasks.task_id = project_task.task_id and tasks.task_id = user_task.task_id and user_task.user_id = users.user_id"
+            Dim sql = "SELECT tasks.task_id, tasks.task_name,tasks.task_description,tasks.task_duration,tasks.task_remaining,projects.project_name,users.user_name FROM tasks LEFT JOIN user_task ON tasks.task_id = user_task.task_id LEFT JOIN users ON users.user_id = user_task.user_id LEFT JOIN projects_user ON projects_user.user_id = users.user_id LEFT JOIN projects ON projects.project_id = projects_user.project_id GROUP BY tasks.task_id"
             Dim dataAdapter = New MySqlDataAdapter
             mysqlcon.Open()
             sqlCmd = New MySqlCommand(sql, mysqlcon)
             dataAdapter.SelectCommand = sqlCmd
-            dataAdapter.Fill(dataset, "projects, project_task, tasks, user_task, users")
-            datatable = dataset.Tables("projects, project_task, tasks, user_task, users")
+            dataAdapter.Fill(dataset, "projects, projects_user, tasks, user_task, users")
+            datatable = dataset.Tables("projects, projects_user, tasks, user_task, users")
         Catch ex1 As MySqlException
             MessageBox.Show(ex1.Message)
         Catch ex As Exception

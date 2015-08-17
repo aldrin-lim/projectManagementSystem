@@ -91,7 +91,7 @@
         Dim heightInterval = 0
 
         For i = 0 To dataTable.Rows.Count - 1
-            createThumbnail(heightInterval, dataTable.Rows(i).Item(2).ToString, dataTable.Rows(i).Item(0).ToString, dataTable.Rows(i).Item(3).ToString, dataTable.Rows(i).Item(4).ToString, dataTable.Rows(i).Item(5).ToString)
+            createThumbnail(heightInterval, dataTable.Rows(i).Item(1).ToString, dataTable.Rows(i).Item(5).ToString, dataTable.Rows(i).Item(3).ToString, dataTable.Rows(i).Item(4).ToString, dataTable.Rows(i).Item(6).ToString)
             heightInterval += 85 '75
         Next
     End Sub

@@ -25,12 +25,12 @@ Partial Class TaskView
         Me.Label2 = New System.Windows.Forms.Label()
         Me.panelBox = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.iconCreateUser = New System.Windows.Forms.PictureBox()
+        Me.iconCreateTask = New System.Windows.Forms.PictureBox()
         Me.btnAddTask = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.iconCreateTask, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -63,17 +63,17 @@ Partial Class TaskView
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
         '
-        'iconCreateUser
+        'iconCreateTask
         '
-        Me.iconCreateUser.BackColor = System.Drawing.Color.Transparent
-        Me.iconCreateUser.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.iconCreateUser.Image = Global.projectManagementSystem.My.Resources.Resources.add_task
-        Me.iconCreateUser.Location = New System.Drawing.Point(29, 140)
-        Me.iconCreateUser.Name = "iconCreateUser"
-        Me.iconCreateUser.Size = New System.Drawing.Size(90, 90)
-        Me.iconCreateUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.iconCreateUser.TabIndex = 25
-        Me.iconCreateUser.TabStop = False
+        Me.iconCreateTask.BackColor = System.Drawing.Color.Transparent
+        Me.iconCreateTask.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.iconCreateTask.Image = Global.projectManagementSystem.My.Resources.Resources.add_task
+        Me.iconCreateTask.Location = New System.Drawing.Point(29, 140)
+        Me.iconCreateTask.Name = "iconCreateTask"
+        Me.iconCreateTask.Size = New System.Drawing.Size(90, 90)
+        Me.iconCreateTask.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.iconCreateTask.TabIndex = 25
+        Me.iconCreateTask.TabStop = False
         '
         'btnAddTask
         '
@@ -113,7 +113,7 @@ Partial Class TaskView
         Me.ClientSize = New System.Drawing.Size(875, 657)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.iconCreateUser)
+        Me.Controls.Add(Me.iconCreateTask)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.panelBox)
         Me.Controls.Add(Me.Label2)
@@ -123,7 +123,7 @@ Partial Class TaskView
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 20)
         Me.Text = "TaskView"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.iconCreateTask, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -131,7 +131,7 @@ Partial Class TaskView
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents panelBox As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents iconCreateUser As System.Windows.Forms.PictureBox
+    Friend WithEvents iconCreateTask As System.Windows.Forms.PictureBox
     Friend WithEvents btnAddTask As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
