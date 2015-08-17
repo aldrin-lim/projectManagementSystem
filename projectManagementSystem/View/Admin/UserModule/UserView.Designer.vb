@@ -30,8 +30,13 @@ Partial Class UserView
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnAddUser = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnSortA = New System.Windows.Forms.PictureBox()
+        Me.btnSortD = New System.Windows.Forms.PictureBox()
         CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSortA, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSortD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelBox
@@ -100,12 +105,52 @@ Partial Class UserView
         Me.Label2.Text = "All User"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(561, 100)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(30, 14)
+        Me.Label1.TabIndex = 28
+        Me.Label1.Text = "Sort:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnSortA
+        '
+        Me.btnSortA.BackColor = System.Drawing.Color.Transparent
+        Me.btnSortA.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSortA.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_sort_14_icon_48
+        Me.btnSortA.Location = New System.Drawing.Point(591, 96)
+        Me.btnSortA.Name = "btnSortA"
+        Me.btnSortA.Size = New System.Drawing.Size(21, 21)
+        Me.btnSortA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnSortA.TabIndex = 27
+        Me.btnSortA.TabStop = False
+        '
+        'btnSortD
+        '
+        Me.btnSortD.BackColor = System.Drawing.Color.Transparent
+        Me.btnSortD.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSortD.Image = Global.projectManagementSystem.My.Resources.Resources.iconmonstr_sort_16_icon_48
+        Me.btnSortD.Location = New System.Drawing.Point(618, 96)
+        Me.btnSortD.Name = "btnSortD"
+        Me.btnSortD.Size = New System.Drawing.Size(21, 21)
+        Me.btnSortD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnSortD.TabIndex = 26
+        Me.btnSortD.TabStop = False
+        '
         'UserView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(875, 657)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnSortA)
+        Me.Controls.Add(Me.btnSortD)
         Me.Controls.Add(Me.panelBox)
         Me.Controls.Add(Me.iconCreateUser)
         Me.Controls.Add(Me.txtSearch)
@@ -117,6 +162,8 @@ Partial Class UserView
         Me.Text = "User"
         CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSortA, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSortD, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,4 +175,7 @@ Partial Class UserView
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents btnAddUser As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnSortA As System.Windows.Forms.PictureBox
+    Friend WithEvents btnSortD As System.Windows.Forms.PictureBox
 End Class

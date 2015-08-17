@@ -31,4 +31,23 @@
     Private Sub btnEditPic_Click(sender As Object, e As EventArgs) Handles btnEditPic.Click
         dialogProfilePicture.ShowDialog()
     End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim uModel = New UserModel
+        Dim result = MessageBox.Show("Are you sure you want to remove this user?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = Windows.Forms.DialogResult.Yes Then
+            If uModel.deleteProject(selectedID) Then
+
+                Dim uBox As New UserBox(UserView.panelBox)
+                uBox.clearAllBox()
+                uBox.createList(uModel.getAllUser)
+                UserView.attachHandlers()
+                Me.Hide()
+            Else
+                MessageBox.Show("Somethin went wrong. Try Again.", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Else
+
+        End If
+    End Sub
 End Class

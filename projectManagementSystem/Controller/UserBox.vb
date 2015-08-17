@@ -135,7 +135,8 @@
 
                 'MessageBox.Show(datatable.Rows(i).Item(3))
                 'createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0), datatable.Rows(i).Item(1), datatable.Rows(i).Item(2), datatable.Rows(i).Item(3).ToString, datatable.Rows(i).Item(4))
-                createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0), datatable.Rows(i).Item(2).ToString, datatable.Rows(i).Item(1), datatable.Rows(i).Item(3))
+                'MessageBox.Show(datatable.Rows(i).Item(0).ToString & datatable.Rows(i).Item(2).ToString & datatable.Rows(i).Item(1).ToString & datatable.Rows(i).Item(3).ToString)
+                createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0).ToString, datatable.Rows(i).Item(2).ToString, datatable.Rows(i).Item(1).ToString, datatable.Rows(i).Item(3).ToString)
 
             Next
 

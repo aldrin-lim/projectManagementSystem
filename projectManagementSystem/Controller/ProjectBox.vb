@@ -58,12 +58,25 @@
 
         members.Location = New Point(5, 118)
         members.Size = New Point(200, 52)
+        If memberCountParams > 0 Then
 
-        If String.IsNullOrEmpty(memberParams) = False Then
+            If memberCountParams = 3 Then
+                Dim mems = memberParams.ToString.Split(",")
+                members.Text = "Members:" + vbCrLf + mems(0) + vbCrLf + mems(1) + vbCrLf +
+                    mems(2).ToString
+            ElseIf memberCountParams = 2 Then
+                Dim mems = memberParams.ToString.Split(",")
+                members.Text = "Members:" + vbCrLf + mems(0) + vbCrLf + mems(1)
 
-            Dim mems = memberParams.ToString.Split(",")
-            members.Text = "Members:" + vbCrLf + mems(0) + vbCrLf + mems(1) + vbCrLf +
-                mems(2)
+            ElseIf memberCountParams = 1 Then
+                Dim mems = memberParams.ToString.Split(",")
+                members.Text = "Members:" + vbCrLf + mems(0)
+            End If
+        ElseIf memberCountParams > 1 Then
+
+        ElseIf memberCountParams > 2 Then
+
+
         Else
             members.Text = "Members:" + vbCrLf + "No members Assigned"
         End If
@@ -124,6 +137,7 @@
                     End If
                 End If
                 'MessageBox.Show(datatable.Rows(i).Item(3))
+
                 createThumbnail(width_, startingHeight, datatable.Rows(i).Item(0), datatable.Rows(i).Item(1), datatable.Rows(i).Item(2), datatable.Rows(i).Item(3).ToString, datatable.Rows(i).Item(4))
 
 

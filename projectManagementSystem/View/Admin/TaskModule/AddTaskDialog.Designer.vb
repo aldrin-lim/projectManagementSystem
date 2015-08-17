@@ -31,7 +31,6 @@ Partial Class AddTaskDialog
         Me.txtTextDesc = New System.Windows.Forms.RichTextBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.txtTaskDuration = New System.Windows.Forms.TextBox()
-        Me.btnCreateTask = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
@@ -134,32 +133,12 @@ Partial Class AddTaskDialog
         Me.txtTaskDuration.Size = New System.Drawing.Size(100, 26)
         Me.txtTaskDuration.TabIndex = 20
         '
-        'btnCreateTask
-        '
-        Me.btnCreateTask.AutoSize = True
-        Me.btnCreateTask.BackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(179, Byte), Integer))
-        Me.btnCreateTask.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCreateTask.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.btnCreateTask.FlatAppearance.CheckedBackColor = System.Drawing.Color.Maroon
-        Me.btnCreateTask.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.btnCreateTask.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.btnCreateTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCreateTask.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreateTask.ForeColor = System.Drawing.Color.White
-        Me.btnCreateTask.Location = New System.Drawing.Point(151, 494)
-        Me.btnCreateTask.Name = "btnCreateTask"
-        Me.btnCreateTask.Size = New System.Drawing.Size(192, 30)
-        Me.btnCreateTask.TabIndex = 22
-        Me.btnCreateTask.Text = "Create Task"
-        Me.btnCreateTask.UseVisualStyleBackColor = False
-        '
         'AddTaskDialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(479, 533)
-        Me.Controls.Add(Me.btnCreateTask)
         Me.Controls.Add(Me.txtTaskDuration)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label6)
@@ -187,5 +166,4 @@ Partial Class AddTaskDialog
     Friend WithEvents txtTextDesc As System.Windows.Forms.RichTextBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents txtTaskDuration As System.Windows.Forms.TextBox
-    Friend WithEvents btnCreateTask As System.Windows.Forms.Button
 End Class

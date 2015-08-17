@@ -51,6 +51,55 @@ Public Class UserModel
         Return dataTable
     End Function
 
+
+    Public Function searchUser(ByVal text) As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT user_id, CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) )'User Name', user_description,user_image FROM users WHERE  CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) ) LIKE '%" & text & "%'  "
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "users")
+            dataTable = dataset.Tables("users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
+    Public Function sortUser(Optional ByVal sort As String = "asc") As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql
+            If sort = "asc" Then
+                sql = "SELECT user_id, CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) )'User Name', user_description,user_image FROM users ORDER BY user_fname ASC"
+            ElseIf sort = "desc" Then
+                sql = "SELECT user_id, CONCAT(user_fname,CONCAT(' ',user_mname,CONCAT(' ',user_lname)) )'User Name', user_description,user_image FROM users ORDER BY user_fname DESC"
+            End If
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(Sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "users")
+            dataTable = dataset.Tables("users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
+
     Public Function getAllAvailableUser() As DataTable
         Dim dataTable As New DataTable
         Try
@@ -116,5 +165,24 @@ Public Class UserModel
         Return dataTable
     End Function
 
+    Public Function deleteProject(ByVal id)
+        Try
+            Dim dataSet As New DataSet
+            Dim sql = "DELETE FROM users WHERE user_id = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            Dim i = sqlCmd.ExecuteNonQuery()
+            If i > 0 Then
+                Return True
+            End If
+        Catch sqlEx As MySqlException
+            MessageBox.Show(sqlEx.Message)
+            Return False
+        Finally
+            mysqlcon.Close()
+        End Try
+    End Function
 
 End Class

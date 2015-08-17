@@ -77,7 +77,12 @@ Public Class UserView
     'End Sub
 
     Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        Dim ubox As New UserBox(panelBox)
+        Dim user As New UserModel
+        ubox.clearAllBox()
+        ubox.createList(user.searchUser(txtSearch.Text))
 
+        attachHandlers()
     End Sub
 
     Private Sub txtSearch_Click(sender As Object, e As EventArgs) Handles txtSearch.Click
@@ -91,5 +96,23 @@ Public Class UserView
 
     Public Sub clearSearch()
         txtSearch.Clear()
+    End Sub
+
+    Private Sub btnSortA_Click(sender As Object, e As EventArgs) Handles btnSortA.Click
+        Dim ubox As New UserBox(panelBox)
+        Dim user As New UserModel
+        ubox.clearAllBox()
+        ubox.createList(user.sortUser())
+
+        attachHandlers()
+    End Sub
+
+    Private Sub btnSortD_Click(sender As Object, e As EventArgs) Handles btnSortD.Click
+        Dim ubox As New UserBox(panelBox)
+        Dim user As New UserModel
+        ubox.clearAllBox()
+        ubox.createList(user.sortUser("desc"))
+
+        attachHandlers()
     End Sub
 End Class

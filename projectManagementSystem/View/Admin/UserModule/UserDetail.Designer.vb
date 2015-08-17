@@ -74,7 +74,7 @@ Partial Class UserDetail
         Me.txtUserName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.txtUserName.Location = New System.Drawing.Point(200, 12)
         Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(404, 75)
+        Me.txtUserName.Size = New System.Drawing.Size(380, 75)
         Me.txtUserName.TabIndex = 18
         Me.txtUserName.Text = "Jeru Pajulas"
         Me.txtUserName.TextAlign = System.Drawing.ContentAlignment.BottomLeft
