@@ -85,6 +85,12 @@
         assignedVal.Font = New Font("Arial", 9, FontStyle.Regular)
         assignedVal.ForeColor = Color.FromArgb(120, 120, 120)
         assignedVal.Text = member
+
+        If String.IsNullOrEmpty(projectParams) = False Then
+            projectVal.Text = projectParams
+        Else
+            projectVal.Text = "No Project"
+        End If
     End Sub
 
     Public Sub createList(ByVal dataTable As DataTable)
