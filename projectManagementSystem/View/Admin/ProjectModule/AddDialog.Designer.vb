@@ -178,14 +178,14 @@ Partial Class AddDialog
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-<<<<<<< HEAD
+        '<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(479, 331)
-=======
-        Me.ClientSize = New System.Drawing.Size(479, 533)
-        Me.Controls.Add(Me.txtProjectDesc)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
->>>>>>> 316c63392903edc1d3bc657ac53bfb44ba88671d
+        '=======
+        '        Me.ClientSize = New System.Drawing.Size(479, 533)
+        '        Me.Controls.Add(Me.txtProjectDesc)
+        '        Me.Controls.Add(Me.Label8)
+        '        Me.Controls.Add(Me.Label7)
+        '>>>>>>> 316c63392903edc1d3bc657ac53bfb44ba88671d
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnCreateProject)

@@ -93,6 +93,11 @@
     <Compile Include="Model\ProjectModel.vb" />
     <Compile Include="Model\TaskModel.vb" />
     <Compile Include="Model\UserModel.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\Admin\ProjectModule\AddDialog.Designer.vb">
       <DependentUpon>AddDialog.vb</DependentUpon>
     </Compile>
@@ -136,11 +141,6 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -193,9 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\TaskModule\AddTaskDialog.resx">
       <DependentUpon>AddTaskDialog.vb</DependentUpon>
@@ -303,14 +303,11 @@
     <None Include="Resources\iconmonstr-user-11-icon-128.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\iconmonstr-sort-14-icon-48.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconmonstr-sort-16-icon-48.png" />
-=======
     <None Include="Resources\add_task.png" />
->>>>>>> 316c63392903edc1d3bc657ac53bfb44ba88671d
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -91,9 +91,7 @@ F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSy
 F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
 F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
 F:\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskView.resources
-<<<<<<< HEAD
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskView.resources
-=======
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe.config
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\bin\Debug\projectManagementSystem.exe
@@ -113,4 +111,4 @@ C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\o
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
 C:\Users\Jeru\Documents\GitHub\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddTaskDialog.resources
->>>>>>> 316c63392903edc1d3bc657ac53bfb44ba88671d
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddTaskDialog.resources

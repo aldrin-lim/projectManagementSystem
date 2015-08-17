@@ -24,7 +24,6 @@ Partial Class TaskView
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.panelBox = New System.Windows.Forms.Panel()
-<<<<<<< .merge_file_a05684
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -36,18 +35,12 @@ Partial Class TaskView
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.panelBox.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-=======
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.iconCreateUser = New System.Windows.Forms.PictureBox()
         Me.btnAddTask = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelBox.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).BeginInit()
->>>>>>> .merge_file_a06588
         Me.SuspendLayout()
         '
         'Label2
@@ -66,16 +59,12 @@ Partial Class TaskView
         'panelBox
         '
         Me.panelBox.AutoScroll = True
-<<<<<<< .merge_file_a05684
         Me.panelBox.Controls.Add(Me.Panel1)
-=======
->>>>>>> .merge_file_a06588
         Me.panelBox.Location = New System.Drawing.Point(169, 140)
         Me.panelBox.Name = "panelBox"
         Me.panelBox.Size = New System.Drawing.Size(668, 497)
         Me.panelBox.TabIndex = 5
         '
-<<<<<<< .merge_file_a05684
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label10)
@@ -86,7 +75,6 @@ Partial Class TaskView
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(1, 5)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(658, 67)
@@ -166,16 +154,15 @@ Partial Class TaskView
         '
         'Label1
         '
+        Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(1, 5)
+        Me.Label1.Location = New System.Drawing.Point(26, 336)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(630, 28)
+        Me.Label1.Size = New System.Drawing.Size(79, 26)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Wew"
+        Me.Label1.Text = "Label1"
         '
-=======
->>>>>>> .merge_file_a06588
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.LightGray
@@ -185,8 +172,6 @@ Partial Class TaskView
         Me.PictureBox2.TabIndex = 6
         Me.PictureBox2.TabStop = False
         '
-<<<<<<< .merge_file_a05684
-=======
         'iconCreateUser
         '
         Me.iconCreateUser.BackColor = System.Drawing.Color.Transparent
@@ -220,27 +205,12 @@ Partial Class TaskView
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 26
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 336)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
-        '
->>>>>>> .merge_file_a06588
         'TaskView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(875, 657)
-<<<<<<< .merge_file_a05684
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.panelBox)
-        Me.Controls.Add(Me.Label2)
-=======
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.iconCreateUser)
@@ -248,20 +218,15 @@ Partial Class TaskView
         Me.Controls.Add(Me.panelBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnAddTask)
->>>>>>> .merge_file_a06588
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "TaskView"
         Me.Padding = New System.Windows.Forms.Padding(0, 0, 0, 20)
         Me.Text = "TaskView"
-<<<<<<< .merge_file_a05684
         Me.panelBox.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-=======
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.iconCreateUser, System.ComponentModel.ISupportInitialize).EndInit()
->>>>>>> .merge_file_a06588
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -269,7 +234,7 @@ Partial Class TaskView
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents panelBox As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-<<<<<<< .merge_file_a05684
+    '<<<<<<< .merge_file_a05684
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
@@ -279,10 +244,10 @@ Partial Class TaskView
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-=======
+    '=======
     Friend WithEvents iconCreateUser As System.Windows.Forms.PictureBox
     Friend WithEvents btnAddTask As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
->>>>>>> .merge_file_a06588
+    '>>>>>>> .merge_file_a06588
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class
