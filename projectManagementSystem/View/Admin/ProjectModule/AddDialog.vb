@@ -12,6 +12,7 @@ Public Class AddDialog
         Dim pbox As New ProjectBox(ProjectView.panelBox)
         Dim pModel As New ProjectModel
         Dim reg As New Regex("^[0-9]")
+
         'Dim startDate As DateTime = DateTime.Parse(dateStart.Text)
         'Dim endDate As DateTime = DateTime.Parse(dateEnd.Text)
         Dim startDate As Date = dateStart.Value

@@ -115,4 +115,8 @@ Public Class UserView
 
         attachHandlers()
     End Sub
+
+    Private Sub iconCreateUser_Click(sender As Object, e As EventArgs) Handles iconCreateUser.Click, btnAddUser.Click
+        AddUser.ShowDialog()
+    End Sub
 End Class

@@ -153,6 +153,12 @@
     <Compile Include="View\Admin\TaskModule\AddTaskDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="View\Admin\TaskModule\AddUser.Designer.vb">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\TaskModule\AddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\Admin\TaskModule\TaskView.designer.vb">
       <DependentUpon>TaskView.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\TaskModule\AddTaskDialog.resx">
       <DependentUpon>AddTaskDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\TaskModule\AddUser.resx">
+      <DependentUpon>AddUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\TaskModule\TaskView.resx">
       <DependentUpon>TaskView.vb</DependentUpon>
