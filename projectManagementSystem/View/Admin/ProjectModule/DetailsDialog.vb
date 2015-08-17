@@ -13,10 +13,13 @@ Public Class detailsDialog
         Dim box = New ProjectTaskBox(Panel1)
         Dim uModel = New UserModel
         Dim pModel = New ProjectModel
+        Dim tModel = New TaskModel
+        Dim count
         ProjectId = ProjectView.getSelectedProjectID
         ProjectDate = ProjectView.getSelectedProjectDate
         setProjectDate(ProjectDate)
         txtDurationDate.Text = ProjectDate
+        count = tModel.getCountOfTaskByProjectID(ProjectId).Rows(0).Item(0)
 
         box.clear()
         box.createList(uModel.getUserByProjectID(ProjectId))
@@ -27,6 +30,9 @@ Public Class detailsDialog
         Else
             txtProjectDesc.Text = pModel.getProjectByID(ProjectId).Rows(0).Item(2).ToString
         End If
+
+        txtMemberCount.Text = count & " People"
+        txtTaskCount.Text = "Total of " & count & " Tasks"
     End Sub
 
 

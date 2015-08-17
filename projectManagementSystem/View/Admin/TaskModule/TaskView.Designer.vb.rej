@@ -1,0 +1,9 @@
+diff a/projectManagementSystem/View/Admin/TaskModule/TaskView.Designer.vb b/projectManagementSystem/View/Admin/TaskModule/TaskView.Designer.vb	(rejected hunks)
+@@ -24,7 +24,6 @@
+     Private Sub InitializeComponent()
+         Me.Label2 = New System.Windows.Forms.Label()
+         Me.panelBox = New System.Windows.Forms.Panel()
+-        Me.Panel1 = New System.Windows.Forms.Panel()
+         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+         Me.SuspendLayout()

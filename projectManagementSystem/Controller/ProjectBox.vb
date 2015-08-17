@@ -18,7 +18,7 @@
     End Sub
 
     Public Sub createThumbnail(ByVal widthParams As Integer, ByVal heightParams As Integer, ByVal projectparams As String, ByVal titleParams As String, ByVal durationParams As String, ByVal memberParams As String, ByVal memberCountParams As Integer)
-        Dim title, durationDate, members, viewDetails, projectid, memberCount As New Label
+        Dim title, durationDate, members, viewDetails, projectid, memberCount, x As New Label
         Dim box As New Panel
 
         Me.panel.Controls.Add(box)
@@ -28,7 +28,7 @@
         box.Controls.Add(memberCount)
         box.Controls.Add(viewDetails)
         box.Controls.Add(projectid)
-
+        box.Controls.Add(x)
         projectid.Text = projectparams
         projectid.Visible = False
         projectid.Tag = "id"
@@ -81,6 +81,13 @@
         viewDetails.ForeColor = Color.FromArgb(13, 119, 179)
         viewDetails.Text = "View Details"
         viewDetails.Cursor = Cursors.Hand
+
+
+        x.Location = New Point(182, 2)
+        x.Font = New Font("Arial", 8, FontStyle.Regular)
+        x.ForeColor = Color.FromArgb(70, 70, 70)
+        x.Text = "x"
+        x.Cursor = Cursors.Hand
     End Sub
 
     Public Sub createList(ByVal datatable As DataTable)
@@ -137,6 +144,8 @@
     Public Sub clearAllBox()
         Me.panel.Controls.Clear()
     End Sub
+
+
 
 
 End Class
