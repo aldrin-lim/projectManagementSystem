@@ -89,4 +89,46 @@ Public Class TaskModel
         Return dataTable
     End Function
 
+    Public Function getTaskAndMileStoneByID(ByVal id) As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT t.`task_id`, m.`milestone_id`,m.`milestone_name`,t.`task_name`, p.`project_name` ,t.`task_duration`,t.`task_remaining`,m.`milestone_duration_start`,m.`rmilestone_duration_end` , CONCAT( u.`user_fname`, CONCAT(' ',u.user_lname)) FROM projects p LEFT JOIN milestone m ON p.`project_id` = m.`milestone_project_id` LEFT JOIN milestone_task mt ON m.milestone_id = mt.milestone_id RIGHT JOIN tasks t ON mt.task_id = t.task_id LEFT JOIN user_task ut ON t.`task_id` = ut.`task_id` LEFT JOIN users u ON ut.`user_id` = u.`user_id` WHERE t.`task_id` = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "projects, project_task, tasks, user_task, users")
+            dataTable = dataset.Tables("projects, project_task, tasks, user_task, users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
+    Public Function getAllTaskAndMileStone() As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT t.`task_id`, m.`milestone_id`,m.`milestone_name`,t.`task_name`, p.`project_name` ,t.`task_duration`,t.`task_remaining`,m.`milestone_duration_start`,m.`rmilestone_duration_end` , CONCAT( u.`user_fname`, CONCAT(' ',u.user_lname)) FROM projects p LEFT JOIN milestone m ON p.`project_id` = m.`milestone_project_id` LEFT JOIN milestone_task mt ON m.milestone_id = mt.milestone_id RIGHT JOIN tasks t ON mt.task_id = t.task_id LEFT JOIN user_task ut ON t.`task_id` = ut.`task_id` LEFT JOIN users u ON ut.`user_id` = u.`user_id`"
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "projects, project_task, tasks, user_task, users")
+            dataTable = dataset.Tables("projects, project_task, tasks, user_task, users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+
 End Class

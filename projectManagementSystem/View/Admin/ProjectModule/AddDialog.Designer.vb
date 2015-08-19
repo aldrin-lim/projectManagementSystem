@@ -33,8 +33,10 @@ Partial Class AddDialog
         Me.btnCreateProject = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtProjectDesc = New System.Windows.Forms.RichTextBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtProjectDescription = New System.Windows.Forms.RichTextBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -163,30 +165,31 @@ Partial Class AddDialog
         Me.txtProjectDesc.TabIndex = 17
         Me.txtProjectDesc.Text = ""
         '
-        'Panel3
+        'Panel1
         '
-        Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel3.Location = New System.Drawing.Point(139, 176)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(328, 91)
-        Me.Panel3.TabIndex = 18
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.txtProjectDescription)
+        Me.Panel1.Location = New System.Drawing.Point(139, 176)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(328, 100)
+        Me.Panel1.TabIndex = 17
+        '
+        'txtProjectDescription
+        '
+        Me.txtProjectDescription.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtProjectDescription.Location = New System.Drawing.Point(3, 2)
+        Me.txtProjectDescription.Name = "txtProjectDescription"
+        Me.txtProjectDescription.Size = New System.Drawing.Size(320, 93)
+        Me.txtProjectDescription.TabIndex = 0
+        Me.txtProjectDescription.Text = ""
         '
         'AddDialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        '<<<<<<< HEAD
         Me.ClientSize = New System.Drawing.Size(479, 331)
-        '=======
-        '        Me.ClientSize = New System.Drawing.Size(479, 533)
-        '        Me.Controls.Add(Me.txtProjectDesc)
-        '        Me.Controls.Add(Me.Label8)
-        '        Me.Controls.Add(Me.Label7)
-        '>>>>>>> 316c63392903edc1d3bc657ac53bfb44ba88671d
-        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnCreateProject)
         Me.Controls.Add(Me.dateEnd)
@@ -202,6 +205,7 @@ Partial Class AddDialog
         Me.Name = "AddDialog"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -217,5 +221,6 @@ Partial Class AddDialog
     Friend WithEvents btnCreateProject As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtProjectDesc As System.Windows.Forms.RichTextBox
-    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents txtProjectDescription As System.Windows.Forms.RichTextBox
 End Class

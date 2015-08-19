@@ -113,3 +113,4 @@ C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectMa
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddUser.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskDetails.resources

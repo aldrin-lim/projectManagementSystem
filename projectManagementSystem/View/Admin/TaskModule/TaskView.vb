@@ -15,11 +15,20 @@ Public Class TaskView
         Dim tbox As New TaskBox(panelBox)
         Dim task As New TaskModel
         tbox.clear()
-        tbox.createList(task.getAllTask())
+        tbox.createList(task.getAllTaskAndMileStone())
         attachHandlers()
     End Sub
+
+    Public Sub setTaskID(ByVal id)
+        selectedID = id
+    End Sub
+
+    Public Function getTaskID()
+        Return selectedID
+    End Function
     Public Sub taskBoxClick(ByVal id)
-        MessageBox.Show(id)
+        setTaskID(id)
+        TaskDetails.ShowDialog()
     End Sub
     Public Sub attachHandlers()
         For Each ctrl As Control In panelBox.Controls
@@ -39,5 +48,9 @@ Public Class TaskView
                 Next
             End If
         Next
+    End Sub
+
+    Private Sub iconCreateUser_Click(sender As Object, e As EventArgs) Handles iconCreateUser.Click, btnAddTask.Click
+        AddTaskDialog.ShowDialog()
     End Sub
 End Class

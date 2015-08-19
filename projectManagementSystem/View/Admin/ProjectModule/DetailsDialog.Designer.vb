@@ -304,10 +304,10 @@ Partial Class detailsDialog
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.txtEditTitle)
-        Me.Controls.Add(Me.txtProjectTitle)
         Me.Controls.Add(Me.txtEditDesc)
         Me.Controls.Add(Me.txtProjectDesc)
+        Me.Controls.Add(Me.txtEditTitle)
+        Me.Controls.Add(Me.txtProjectTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximumSize = New System.Drawing.Size(866, 634)
         Me.Name = "detailsDialog"

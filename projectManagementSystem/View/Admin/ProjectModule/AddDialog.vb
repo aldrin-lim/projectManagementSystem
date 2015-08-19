@@ -33,7 +33,7 @@ Public Class AddDialog
 
 
         If result = Windows.Forms.DialogResult.Yes Then
-            If pModel.createProject(txtProjectName.Text, txtProjectDesc.Text, dateStart.Value, dateEnd.Value) Then
+            If pModel.createProject(txtProjectName.Text, txtProjectDescription.Text, dateStart.Value, dateEnd.Value) Then
                 MessageBox.Show("Successfully Created Project")
                 pbox.clearAllBox()
                 pbox.createList(pModel.getAllProject)
