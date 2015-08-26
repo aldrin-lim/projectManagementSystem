@@ -18,7 +18,8 @@ Public Class ProjectView
     Private Sub viewProjectDetails(ByVal idx As String, ByVal dtx As String)
         setSelectedProjectDate(dtx)
         setSelectedProjectID(idx)
-        detailsDialog.ShowDialog()
+        Dim dd = New detailsDialog
+        dd.ShowDialog()
     End Sub
 
 

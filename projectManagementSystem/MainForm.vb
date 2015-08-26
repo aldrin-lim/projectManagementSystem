@@ -32,6 +32,7 @@
 
     Private Sub btnProjectModule_Click(sender As Object, e As EventArgs) Handles btnProjectModule.Click, iconProject.Click, txtProjectIcon.Click
         hoverLine.Location = New Point(0, 128)
+        Dim pv = New ProjectView
         ProjectView.MdiParent = Me
         ProjectView.Show()
         ProjectView.Location = New Point(229, 0)

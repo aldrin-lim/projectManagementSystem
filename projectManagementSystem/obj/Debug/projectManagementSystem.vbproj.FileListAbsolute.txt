@@ -105,6 +105,8 @@ C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectMa
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.MainForm.resources
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.Resources.resources
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddTaskDialog.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskDetails.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddUser.resources
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskView.resources
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserDetail.resources
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.UserView.resources
@@ -112,5 +114,4 @@ C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectMa
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.exe
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.xml
 C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.pdb
-C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddUser.resources
-C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.TaskDetails.resources
+C:\Workspace\projectManagementSystem\projectManagementSystem\obj\Debug\projectManagementSystem.AddMilestoneDialog.resources

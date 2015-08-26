@@ -27,7 +27,7 @@ Partial Class AddTaskDialog
         Me.txtTaskName = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtDescription = New System.Windows.Forms.Label()
         Me.txtTaskDuration = New System.Windows.Forms.TextBox()
         Me.save = New System.Windows.Forms.Button()
         Me.dateEnd = New System.Windows.Forms.DateTimePicker()
@@ -38,11 +38,14 @@ Partial Class AddTaskDialog
         Me.cbxProject = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtProjectDescription = New System.Windows.Forms.RichTextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbxAssigned = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cbxMilestone = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.cbxDependency = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtAdditional = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -100,16 +103,16 @@ Partial Class AddTaskDialog
         Me.Label2.Text = "Allocated Hours"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label6
+        'txtDescription
         '
-        Me.Label6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(12, 299)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 18)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "Description"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.txtDescription.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.txtDescription.Location = New System.Drawing.Point(12, 340)
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(121, 18)
+        Me.txtDescription.TabIndex = 17
+        Me.txtDescription.Text = "Description"
+        Me.txtDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtTaskDuration
         '
@@ -134,7 +137,7 @@ Partial Class AddTaskDialog
         Me.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.save.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.save.ForeColor = System.Drawing.Color.White
-        Me.save.Location = New System.Drawing.Point(151, 414)
+        Me.save.Location = New System.Drawing.Point(151, 455)
         Me.save.Name = "save"
         Me.save.Size = New System.Drawing.Size(192, 30)
         Me.save.TabIndex = 28
@@ -208,7 +211,7 @@ Partial Class AddTaskDialog
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.txtProjectDescription)
-        Me.Panel1.Location = New System.Drawing.Point(139, 299)
+        Me.Panel1.Location = New System.Drawing.Point(139, 340)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(328, 100)
         Me.Panel1.TabIndex = 42
@@ -222,15 +225,15 @@ Partial Class AddTaskDialog
         Me.txtProjectDescription.TabIndex = 0
         Me.txtProjectDescription.Text = ""
         '
-        'ComboBox1
+        'cbxAssigned
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(139, 234)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(328, 26)
-        Me.ComboBox1.TabIndex = 44
+        Me.cbxAssigned.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxAssigned.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.cbxAssigned.FormattingEnabled = True
+        Me.cbxAssigned.Location = New System.Drawing.Point(139, 234)
+        Me.cbxAssigned.Name = "cbxAssigned"
+        Me.cbxAssigned.Size = New System.Drawing.Size(328, 26)
+        Me.cbxAssigned.TabIndex = 44
         '
         'Label8
         '
@@ -243,15 +246,15 @@ Partial Class AddTaskDialog
         Me.Label8.Text = "Assigned to"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'ComboBox2
+        'cbxMilestone
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(139, 266)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(328, 26)
-        Me.ComboBox2.TabIndex = 46
+        Me.cbxMilestone.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxMilestone.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.cbxMilestone.FormattingEnabled = True
+        Me.cbxMilestone.Location = New System.Drawing.Point(139, 266)
+        Me.cbxMilestone.Name = "cbxMilestone"
+        Me.cbxMilestone.Size = New System.Drawing.Size(328, 26)
+        Me.cbxMilestone.TabIndex = 46
         '
         'Label9
         '
@@ -261,7 +264,7 @@ Partial Class AddTaskDialog
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(121, 18)
         Me.Label9.TabIndex = 45
-        Me.Label9.Text = "Dependency"
+        Me.Label9.Text = "Milestone"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label10
@@ -275,16 +278,51 @@ Partial Class AddTaskDialog
         Me.Label10.Text = "Hr(s)"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'cbxDependency
+        '
+        Me.cbxDependency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbxDependency.Font = New System.Drawing.Font("Arial", 12.0!)
+        Me.cbxDependency.FormattingEnabled = True
+        Me.cbxDependency.Location = New System.Drawing.Point(139, 303)
+        Me.cbxDependency.Name = "cbxDependency"
+        Me.cbxDependency.Size = New System.Drawing.Size(328, 26)
+        Me.cbxDependency.TabIndex = 49
+        '
+        'Label11
+        '
+        Me.Label11.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(12, 303)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(121, 18)
+        Me.Label11.TabIndex = 48
+        Me.Label11.Text = "Dependency"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtAdditional
+        '
+        Me.txtAdditional.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAdditional.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.txtAdditional.Location = New System.Drawing.Point(254, 131)
+        Me.txtAdditional.Name = "txtAdditional"
+        Me.txtAdditional.Size = New System.Drawing.Size(209, 18)
+        Me.txtAdditional.TabIndex = 50
+        Me.txtAdditional.Text = "+ 20 Hours"
+        Me.txtAdditional.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'AddTaskDialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(479, 454)
+        Me.ClientSize = New System.Drawing.Size(479, 492)
+        Me.Controls.Add(Me.txtAdditional)
+        Me.Controls.Add(Me.cbxDependency)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cbxMilestone)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbxAssigned)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.cbxProject)
@@ -295,7 +333,7 @@ Partial Class AddTaskDialog
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.save)
         Me.Controls.Add(Me.txtTaskDuration)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.txtDescription)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.txtTaskName)
@@ -316,7 +354,7 @@ Partial Class AddTaskDialog
     Friend WithEvents txtTaskName As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtDescription As System.Windows.Forms.Label
     Friend WithEvents txtTaskDuration As System.Windows.Forms.TextBox
     Friend WithEvents save As System.Windows.Forms.Button
     Friend WithEvents dateEnd As System.Windows.Forms.DateTimePicker
@@ -327,9 +365,12 @@ Partial Class AddTaskDialog
     Friend WithEvents cbxProject As System.Windows.Forms.ComboBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents txtProjectDescription As System.Windows.Forms.RichTextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxAssigned As System.Windows.Forms.ComboBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents cbxMilestone As System.Windows.Forms.ComboBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents cbxDependency As System.Windows.Forms.ComboBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txtAdditional As System.Windows.Forms.Label
 End Class
