@@ -22,38 +22,25 @@ Partial Class AddUser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.txtFirstName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtMiddleName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtPosition = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.save = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox2.Location = New System.Drawing.Point(139, 108)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(328, 1)
-        Me.PictureBox2.TabIndex = 22
-        Me.PictureBox2.TabStop = False
         '
         'txtFirstName
         '
@@ -88,25 +75,16 @@ Partial Class AddUser
         Me.Label1.Text = "Add User"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox1
+        'txtMiddleName
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox1.Location = New System.Drawing.Point(139, 143)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(328, 1)
-        Me.PictureBox1.TabIndex = 30
-        Me.PictureBox1.TabStop = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox1.Location = New System.Drawing.Point(139, 120)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(328, 19)
-        Me.TextBox1.TabIndex = 29
+        Me.txtMiddleName.BackColor = System.Drawing.Color.White
+        Me.txtMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtMiddleName.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMiddleName.ForeColor = System.Drawing.Color.DimGray
+        Me.txtMiddleName.Location = New System.Drawing.Point(139, 120)
+        Me.txtMiddleName.Name = "txtMiddleName"
+        Me.txtMiddleName.Size = New System.Drawing.Size(328, 19)
+        Me.txtMiddleName.TabIndex = 29
         '
         'Label2
         '
@@ -119,25 +97,16 @@ Partial Class AddUser
         Me.Label2.Text = "Middle Name"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PictureBox3
+        'txtLastName
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox3.Location = New System.Drawing.Point(139, 177)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(328, 1)
-        Me.PictureBox3.TabIndex = 33
-        Me.PictureBox3.TabStop = False
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.White
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox2.Location = New System.Drawing.Point(139, 154)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(328, 19)
-        Me.TextBox2.TabIndex = 32
+        Me.txtLastName.BackColor = System.Drawing.Color.White
+        Me.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtLastName.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastName.ForeColor = System.Drawing.Color.DimGray
+        Me.txtLastName.Location = New System.Drawing.Point(139, 154)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(328, 19)
+        Me.txtLastName.TabIndex = 32
         '
         'Label4
         '
@@ -150,25 +119,16 @@ Partial Class AddUser
         Me.Label4.Text = "Last Name"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PictureBox4
+        'txtPosition
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox4.Location = New System.Drawing.Point(139, 210)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(328, 1)
-        Me.PictureBox4.TabIndex = 36
-        Me.PictureBox4.TabStop = False
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.White
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox3.Location = New System.Drawing.Point(139, 186)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(328, 19)
-        Me.TextBox3.TabIndex = 35
+        Me.txtPosition.BackColor = System.Drawing.Color.White
+        Me.txtPosition.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPosition.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPosition.ForeColor = System.Drawing.Color.DimGray
+        Me.txtPosition.Location = New System.Drawing.Point(139, 186)
+        Me.txtPosition.Name = "txtPosition"
+        Me.txtPosition.Size = New System.Drawing.Size(328, 19)
+        Me.txtPosition.TabIndex = 35
         '
         'Label5
         '
@@ -193,59 +153,63 @@ Partial Class AddUser
         Me.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.save.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.save.ForeColor = System.Drawing.Color.White
-        Me.save.Location = New System.Drawing.Point(167, 307)
+        Me.save.Location = New System.Drawing.Point(167, 230)
         Me.save.Name = "save"
         Me.save.Size = New System.Drawing.Size(192, 30)
         Me.save.TabIndex = 27
         Me.save.Text = "Save"
         Me.save.UseVisualStyleBackColor = False
         '
-        'GroupBox1
+        'PictureBox4
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 232)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(474, 49)
-        Me.GroupBox1.TabIndex = 37
-        Me.GroupBox1.TabStop = False
+        Me.PictureBox4.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox4.Location = New System.Drawing.Point(139, 210)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(328, 1)
+        Me.PictureBox4.TabIndex = 36
+        Me.PictureBox4.TabStop = False
         '
-        'ComboBox1
+        'PictureBox3
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(129, 14)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(339, 26)
-        Me.ComboBox1.TabIndex = 40
+        Me.PictureBox3.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox3.Location = New System.Drawing.Point(139, 177)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(328, 1)
+        Me.PictureBox3.TabIndex = 33
+        Me.PictureBox3.TabStop = False
         '
-        'Label6
+        'PictureBox1
         '
-        Me.Label6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(7, 18)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 18)
-        Me.Label6.TabIndex = 39
-        Me.Label6.Text = "Task"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.PictureBox1.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox1.Location = New System.Drawing.Point(139, 143)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(328, 1)
+        Me.PictureBox1.TabIndex = 30
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox2.Location = New System.Drawing.Point(139, 108)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(328, 1)
+        Me.PictureBox2.TabIndex = 22
+        Me.PictureBox2.TabStop = False
         '
         'AddUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(507, 349)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(507, 271)
         Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtPosition)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtLastName)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtMiddleName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.save)
         Me.Controls.Add(Me.PictureBox2)
@@ -255,11 +219,10 @@ Partial Class AddUser
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "AddUser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -269,16 +232,13 @@ Partial Class AddUser
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtMiddleName As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtLastName As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtPosition As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents save As System.Windows.Forms.Button
-    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class

@@ -38,6 +38,7 @@ Partial Class UserDetail
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.txtEditPosition = New System.Windows.Forms.TextBox()
         CType(Me.pboxUserImage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEditUserPosition, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,7 +128,6 @@ Partial Class UserDetail
         '
         'dialogProfilePicture
         '
-        Me.dialogProfilePicture.FileName = "OpenFileDialog1"
         '
         'Label1
         '
@@ -204,6 +204,17 @@ Partial Class UserDetail
         Me.PictureBox3.TabStop = False
         Me.ToolTip1.SetToolTip(Me.PictureBox3, "Edit Name")
         '
+        'txtEditPosition
+        '
+        Me.txtEditPosition.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEditPosition.Font = New System.Drawing.Font("Arial", 9.0!)
+        Me.txtEditPosition.ForeColor = System.Drawing.Color.FromArgb(CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.txtEditPosition.Location = New System.Drawing.Point(206, 110)
+        Me.txtEditPosition.Multiline = True
+        Me.txtEditPosition.Name = "txtEditPosition"
+        Me.txtEditPosition.Size = New System.Drawing.Size(265, 20)
+        Me.txtEditPosition.TabIndex = 39
+        '
         'UserDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -223,6 +234,7 @@ Partial Class UserDetail
         Me.Controls.Add(Me.txtUserName)
         Me.Controls.Add(Me.txtUserPosition)
         Me.Controls.Add(Me.pboxUserImage)
+        Me.Controls.Add(Me.txtEditPosition)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "UserDetail"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
@@ -251,4 +263,5 @@ Partial Class UserDetail
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents txtEditPosition As System.Windows.Forms.TextBox
 End Class

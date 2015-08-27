@@ -184,5 +184,101 @@ Public Class UserModel
             mysqlcon.Close()
         End Try
     End Function
+    Public Function updateUserPosition(ByVal id, ByVal desc)
+        Try
+            Dim dataSet As New DataSet
+            Dim sql = "UPDATE users SET user_description = '" & desc & "' WHERE user_id = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            Dim i = sqlCmd.ExecuteNonQuery()
+            If i > 0 Then
+                Return True
+            End If
+        Catch sqlEx As MySqlException
+            MessageBox.Show(sqlEx.Message)
+            Return False
+        Finally
+            mysqlcon.Close()
+        End Try
+    End Function
+    Public Function updateProfilePic(ByVal id, ByVal fileName)
+        Try
+            Dim dataSet As New DataSet
+            Dim sql = "UPDATE users SET user_image = '" & fileName & "' WHERE user_id = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            Dim i = sqlCmd.ExecuteNonQuery()
+            If i > 0 Then
+                Return True
+            End If
+        Catch sqlEx As MySqlException
+            MessageBox.Show(sqlEx.Message)
+            Return False
+        Finally
+            mysqlcon.Close()
+        End Try
+    End Function
+    Public Function updateUserName(ByVal id, ByVal fname, ByVal mname, ByVal lname)
+        Try
+            Dim dataSet As New DataSet
+            Dim sql = "UPDATE users SET user_fname = '" & fname & "',user_mname = '" & mname & "',user_lname = '" & lname & "' WHERE user_id = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            Dim i = sqlCmd.ExecuteNonQuery()
+            If i > 0 Then
+                Return True
+            End If
+        Catch sqlEx As MySqlException
+            MessageBox.Show(sqlEx.Message)
+            Return False
+        Finally
+            mysqlcon.Close()
+        End Try
+    End Function
+    Public Function getUserBySelectedID(ByVal id) As DataTable
+        Dim dataTable As New DataTable
+        Try
+            Dim dataset As New DataSet
+            Dim sql = "SELECT user_id, user_fname, user_mname, user_lname FROM users WHERE user_id = " & id
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            dataAdapter.SelectCommand = sqlCmd
+            dataAdapter.Fill(dataset, "users")
+            dataTable = dataset.Tables("users")
+        Catch ex1 As MySqlException
+            MessageBox.Show(ex1.Message)
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            mysqlcon.Close()
+        End Try
+        Return dataTable
+    End Function
+    Public Function createUser(ByVal userFirst As String, ByVal userMiddle As String, ByVal userLast As String, ByVal userPosition As String)
+        Try
+            Dim dataSet As New DataSet
+            Dim sql = "INSERT INTO `users`(`user_fname`, `user_mname`, `user_lname`, `user_description`) VALUES ('" & userFirst & "','" & userMiddle & "' ,'" & userLast & "','" & userPosition & "')"
+            Dim dataAdapter = New MySqlDataAdapter
+            mysqlcon.Open()
+
+            sqlCmd = New MySqlCommand(sql, mysqlcon)
+            Dim i = sqlCmd.ExecuteNonQuery()
+            If i > 0 Then
+                Return True
+            End If
+        Catch sqlEx As MySqlException
+            MessageBox.Show(sqlEx.Message)
+            Return False
+        Finally
+            mysqlcon.Close()
+        End Try
+    End Function
 
 End Class

@@ -178,6 +178,12 @@
     <Compile Include="View\Admin\TaskModule\TaskView.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="View\Admin\UserModule\EditUserNameDialog.Designer.vb">
+      <DependentUpon>EditUserNameDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\UserModule\EditUserNameDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="View\Admin\UserModule\UserDetail.Designer.vb">
       <DependentUpon>UserDetail.vb</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\TaskModule\TaskView.resx">
       <DependentUpon>TaskView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Admin\UserModule\EditUserNameDialog.resx">
+      <DependentUpon>EditUserNameDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Admin\UserModule\UserDetail.resx">
       <DependentUpon>UserDetail.vb</DependentUpon>
